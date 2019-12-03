@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+    <file source-language="en" date="2019-12-03T10:43:20+01:00">
+        <body>
+            <trans-unit id="consentModal.title">
+                <source>Information that we collect</source>
+            </trans-unit>
+            <trans-unit id="consentModal.description">
+                <source>Here you can see and customize the information that we collect about you.</source>
+            </trans-unit>
+            <trans-unit id="privacyPolicy.title">
+                <source>privacy policy</source>
+            </trans-unit>
+            <trans-unit id="privacyPolicy.text">
+                <source>To learn more, please read our {privacyPolicy}.</source>
+            </trans-unit>
+            <trans-unit id="ok">
+                <source>OK</source>
+            </trans-unit>
+            <trans-unit id="close">
+                <source>Save</source>
+            </trans-unit>
+            <trans-unit id="decline">
+                <source>Decline</source>
+            </trans-unit>
+            <trans-unit id="save">
+                <source>Save</source>
+            </trans-unit>
+            <trans-unit id="poweredBy"></trans-unit>
+            <trans-unit id="inlineTracker.description">
+                <source>Beispiel für ein Inline-Tracking Skript</source>
+            </trans-unit>
+            <trans-unit id="externalTracker.description">
+                <source>Beispiel für ein externes Tracking Skript</source>
+            </trans-unit>
+            <trans-unit id="googleAnalytics.description">
+                <source>Collection of visitor statistics</source>
+            </trans-unit>
+            <trans-unit id="purposes.analytics">
+                <source>Collection of visitor statistics</source>
+            </trans-unit>
+            <trans-unit id="purposes.security">
+                <source>Security</source>
+            </trans-unit>
+            <trans-unit id="purposes.livechat">
+                <source>Live Chat</source>
+            </trans-unit>
+            <trans-unit id="purposes.advertising">
+                <source>Anzeigen von Werbung</source>
+            </trans-unit>
+            <trans-unit id="purposes.styling">
+                <source>Styling</source>
+            </trans-unit>
+            <trans-unit id="consentNotice.description">
+                <source>We collect and process your personal information for the following purposes: {purposes}.</source>
+            </trans-unit>
+            <trans-unit id="consentNotice.changeDescription">
+                <source>There were changes since your last visit, please update your consent.</source>
+            </trans-unit>
+            <trans-unit id="consentNotice.learnMore">
+                <source>Learn more</source>
+            </trans-unit>
+            <trans-unit id="app.disableAll.title">
+                <source>Toggle all apps</source>
+            </trans-unit>
+            <trans-unit id="app.disableAll.description">
+                <source>Use this switch to enable/disable all apps.</source>
+            </trans-unit>
+            <trans-unit id="app.optOut.title">
+                <source>(opt-out)</source>
+            </trans-unit>
+            <trans-unit id="app.optOut.description">
+                <source>This app is loaded by default (but you can opt out)</source>
+            </trans-unit>
+            <trans-unit id="app.required.title">
+                <source>(always required)</source>
+            </trans-unit>
+            <trans-unit id="app.required.description">
+                <source>This application is always required</source>
+            </trans-unit>
+            <trans-unit id="app.purposes">
+                <source>Purposes</source>
+            </trans-unit>
+            <trans-unit id="app.purpose">
+                <source>Purpose</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,40 @@
+{
+  "name": "studiomitte/klaro",
+  "keywords": [
+    "TYPO3",
+    "extension",
+    "consent",
+    "cookies",
+    "gdpr",
+    "dsgvo"
+  ],
+  "authors": [
+    {
+      "name": "Georg Ringer",
+      "role": "Developer",
+      "homepage": "https://studiomitte.com"
+    }
+  ],
+  "type": "typo3-cms-extension",
+  "description": "Show records in extbase if those got a different language defined then -1 (all) or 0 (default) and no language parent",
+  "homepage": "https://studiomitte.com",
+  "license": [
+    "GPL-2.0-or-later"
+  ],
+  "require": {
+    "typo3/cms-core": "^9 || ^10"
+  },
+  "autoload": {
+    "psr-4": {
+      "StudioMitte\\Klaro\\": "Classes"
+    }
+  },
+  "replace": {
+    "typo3-ter/klaro": "self.version"
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "klaro"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+    <file source-language="en" target-language="de" date="2019-12-03T12:28:39+01:00">
+        <body>
+            <trans-unit id="site.configuration.enable">
+                <source>Enable</source>
+                <target>Aktivieren</target>
+            </trans-unit>
+            <trans-unit id="site.configuration.privacy_page">
+                <source>Privacy Page ID</source>
+                <target>Seite Datenschutz</target>
+            </trans-unit>
+            <trans-unit id="site.configuration.configuration_file">
+                <source>Path to the configuration file</source>
+                <target>Pfad zur Konfigurationsdatei</target>
+            </trans-unit>
+            <trans-unit id="site.configuration.language_file">
+                <source>Path to the language file</source>
+                <target>Pfad zur Sprachdatei</target>
+            </trans-unit>
+            <trans-unit id="site.configuration.tab">
+                <source>Klaro Cookie Settings</source>
+                <target>Klaro Cookie Einstellungen</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
