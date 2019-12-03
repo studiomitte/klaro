@@ -20,7 +20,7 @@
             </trans-unit>
             <trans-unit id="ok">
                 <source>OK</source>
-                <target>Los geht&#39;s! [DE]</target>
+                <target>Los geht&#39;s!</target>
             </trans-unit>
             <trans-unit id="close">
                 <source>Save</source>
