@@ -16,7 +16,7 @@
     }
   ],
   "type": "typo3-cms-extension",
-  "description": "Show records in extbase if those got a different language defined then -1 (all) or 0 (default) and no language parent",
+  "description": "Cookie consent solution following the GDPR by using the solution by Klaro",
   "homepage": "https://studiomitte.com",
   "license": [
     "GPL-2.0-or-later"
