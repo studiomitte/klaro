@@ -10,6 +10,7 @@ use TYPO3\CMS\Core\Page\PageRenderer;
 use TYPO3\CMS\Core\Site\Entity\Site;
 use TYPO3\CMS\Core\Site\Entity\SiteInterface;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\CMS\Core\Utility\PathUtility;
 use TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController;
 
 class PageRendererHook
@@ -18,7 +19,9 @@ class PageRendererHook
     /** @var PageRenderer */
     protected $pageRenderer;
 
-    public function run(array $params, PageRenderer $pageRenderer)
+    private const FAKE_PREFIX = 'fake-klaro';
+
+    public function preProcess(array $params, PageRenderer $pageRenderer)
     {
         $site = $this->getCurrentSite();
         if ($site && $tsfe = $this->getTypoScriptFrontendController()) {
@@ -29,8 +32,25 @@ class PageRendererHook
                     $path = 'EXT:klaro/Resources/Public/Klaro/';
 
                     $this->createTranslations($siteConfiguration);
+                    $stylePrefix = (isset($siteConfiguration['klaro_style_prefix']) && !empty($siteConfiguration['klaro_style_prefix'])) ? self::FAKE_PREFIX : '';
+
                     $pageRenderer->addJsFooterLibrary('klaro - config', $siteConfiguration['klaro_configuration_file'], 'application/javascript', false, false, '', false, '|', false, '', true);
-                    $pageRenderer->addJsFooterLibrary('klaro - klaro', $path . 'klaro.js', 'application/javascript', false, false, '', false, '|', false, '', true);
+                    $pageRenderer->addJsFooterLibrary('klaro - klaro', $path . 'klaro.js', 'application/javascript', false, false, '', false, '|', false, $stylePrefix, true);
+
+                }
+            }
+        }
+    }
+
+    public function postProcess(array $params, PageRenderer $pageRenderer)
+    {
+        $site = $this->getCurrentSite();
+        if ($site && $tsfe = $this->getTypoScriptFrontendController()) {
+            $siteConfiguration = $site->getConfiguration();
+            if ($siteConfiguration['klaro_enable'] && $siteConfiguration['klaro_configuration_file']) {
+                $stylePrefix = $siteConfiguration['klaro_style_prefix'] ?? '';
+                if ($stylePrefix) {
+                    $params['jsFooterLibs'] = str_replace(' integrity="' . self::FAKE_PREFIX . '"', ' data-style-prefix="' . $stylePrefix . '"', $params['jsFooterLibs']);
                 }
             }
         }

@@ -14,6 +14,9 @@
             <trans-unit id="site.configuration.language_file">
                 <source>Path to the language file</source>
             </trans-unit>
+            <trans-unit id="site.configuration.style_prefix">
+                <source>Style prefix</source>
+            </trans-unit>
             <trans-unit id="site.configuration.tab">
                 <source>Klaro Cookie Settings</source>
             </trans-unit>
