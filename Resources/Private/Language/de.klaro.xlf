@@ -34,6 +34,10 @@
                 <source>Save</source>
                 <target>Speichern</target>
             </trans-unit>
+            <trans-unit id="googleTagManager.description">
+                <source>Embed additional JavaScript files</source>
+                <target>Einbinden von zusätzlichem JavaScript</target>
+            </trans-unit>
             <trans-unit id="googleAnalytics.description">
                 <source>Collection of visitor statistics</source>
                 <target>Sammeln von Besucherstatistiken</target>

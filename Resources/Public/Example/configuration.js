@@ -6,9 +6,20 @@ var klaroConfig = {
     apps: [
         {
             name: 'googleAnalytics',
+            title: 'Google Analytics',
+            purposes: ['analytics'],
+            cookies: [/^ga/i],
+            callback: function (consent, app) {
+                if (consent !== false) {
+                    dataLayer.push({'event': 'loadgtm-analytics'})
+                }
+            },
+        },
+        {
+            name: 'googleTagManager',
             title: 'Google Tag Manager',
             purposes: ['analytics'],
-            cookies: ['gtm'],
+            required: true
         }
     ],
 };

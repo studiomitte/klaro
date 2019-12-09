@@ -33,6 +33,9 @@
             <trans-unit id="externalTracker.description">
                 <source>Beispiel für ein externes Tracking Skript</source>
             </trans-unit>
+            <trans-unit id="googleTagManager.description">
+                <source>Embed additional JavaScript files</source>
+            </trans-unit>
             <trans-unit id="googleAnalytics.description">
                 <source>Collection of visitor statistics</source>
             </trans-unit>
