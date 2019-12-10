@@ -8,8 +8,8 @@ class ContentPostProcAll
 {
     /** @var array */
     protected $simpleSearchReplacements = [
-        'href="https://KLARO_CONSENT.com"' => 'href="" onClick="return klaro.show(klaroConfig)"',
-        'href="https://KLARO_RESET.com"' => 'klaro.getManager().resetConsent();location.reload()',
+        'href="https://KLARO_CONSENT.com"' => 'href="#" onClick="return klaro.show(klaroConfig)"',
+        'href="https://KLARO_RESET.com"' => 'href="#" onClick="klaro.getManager().resetConsent();location.reload()"',
     ];
 
     /**
