@@ -1,98 +1,82 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <xliff version="1.0">
-    <file source-language="en" target-language="de" date="2019-12-18T12:35:57+01:00">
+    <file source-language="en" target-language="hu" date="2019-12-18T12:35:57+01:00">
         <body>
             <trans-unit id="consentModal.title">
                 <source>Information that we collect</source>
-                <target>Informationen die wir sammeln</target>
+                <target>Információk, amiket gyűjtünk</target>
             </trans-unit>
             <trans-unit id="consentModal.description">
                 <source>Here you can see and customize the information that we collect about you.</source>
-                <target>Hier können Sie einsehen und anpassen, welche Information wir über Sie sammeln.</target>
+                <target>Itt láthatod és testreszabhatod az rólad gyűjtött információkat.</target>
             </trans-unit>
             <trans-unit id="privacyPolicy.title">
                 <source>privacy policy</source>
-                <target>Datenschutzerklärung</target>
+                <target>adatvédelmi irányelveinket</target>
             </trans-unit>
             <trans-unit id="privacyPolicy.text">
                 <source>To learn more, please read our {privacyPolicy}.</source>
-                <target>Bitte lesen Sie unsere {privacyPolicy} um weitere Details zu erfahren.</target>
+                <target>További információért kérjük, olvassd el az {privacyPolicy}.</target>
             </trans-unit>
             <trans-unit id="ok">
                 <source>OK</source>
-                <target>Los geht&#39;s!</target>
+                <target>Elfogad</target>
             </trans-unit>
             <trans-unit id="close">
                 <source>Save</source>
-                <target>Schließen</target>
+                <target>Elvet</target>
             </trans-unit>
             <trans-unit id="decline">
                 <source>Decline</source>
-                <target>Ablehnen</target>
+                <target>Mentés</target>
             </trans-unit>
             <trans-unit id="save">
                 <source>Save</source>
-                <target>Speichern</target>
-            </trans-unit>
-            <trans-unit id="googleTagManager.description">
-                <source>Embed additional JavaScript files</source>
-                <target>Einbinden von zusätzlichem JavaScript</target>
-            </trans-unit>
-            <trans-unit id="googleAnalytics.description">
-                <source>Collection of visitor statistics</source>
-                <target>Sammeln von Besucherstatistiken</target>
-            </trans-unit>
-            <trans-unit id="purposes.analytics">
-                <source>Collection of visitor statistics</source>
-                <target>Besucher-Statistiken</target>
-            </trans-unit>
-            <trans-unit id="purposes.security">
-                <source>Security</source>
-                <target>Sicherheit</target>
+                <target>Save</target>
             </trans-unit>
             <trans-unit id="consentNotice.description">
                 <source>We collect and process your personal information for the following purposes: {purposes}.</source>
-                <target>Wir speichern und verarbeiten Ihre personenbezogenen Informationen für folgende Zwecke: {purposes}.</target>
+                <target>Az személyes adataidat összegyűjtjük és feldolgozzuk az alábbi célokra: {purposes}.</target>
             </trans-unit>
             <trans-unit id="consentNotice.changeDescription">
                 <source>There were changes since your last visit, please update your consent.</source>
-                <target>Es gab Änderungen seit Ihrem letzten Besuch, bitte aktualisieren Sie Ihre Auswahl.</target>
+                <target>Az utolsó látogatás óta változások történtek, kérjük, frissítsd a hozzájárulásodat.</target>
             </trans-unit>
             <trans-unit id="consentNotice.learnMore">
                 <source>Learn more</source>
-                <target>Mehr erfahren</target>
+                <target>Tudj meg többet</target>
             </trans-unit>
             <trans-unit id="app.disableAll.title">
                 <source>Toggle all apps</source>
-                <target>Alle Anwendungen aktivieren/deaktivieren</target>
+                <target>Összes app átkapcsolása</target>
             </trans-unit>
             <trans-unit id="app.disableAll.description">
                 <source>Use this switch to enable/disable all apps.</source>
-                <target>Nutzen Sie diesen Schalter um alle Apps zu aktivieren/deaktivieren.</target>
+                <target>Használd ezt a kapcsolót az összes alkalmazás engedélyezéséhez/letiltásához.</target>
             </trans-unit>
             <trans-unit id="app.optOut.title">
                 <source>(opt-out)</source>
-                <target>(Opt-Out)</target>
+                <target>(leiratkozás)</target>
             </trans-unit>
             <trans-unit id="app.optOut.description">
                 <source>This app is loaded by default (but you can opt out)</source>
-                <target>Diese Anwendung wird standardmäßig gelanden (aber Sie können sie deaktivieren)</target>
+                <target>Ez az alkalmazás alapértelmezés szerint betöltött (de ki lehet kapcsolni)</target>
             </trans-unit>
             <trans-unit id="app.required.title">
                 <source>(always required)</source>
-                <target>(immer notwendig)</target>
+                <target>(mindig kötelező)</target>
             </trans-unit>
             <trans-unit id="app.required.description">
                 <source>This application is always required</source>
-                <target>Diese Anwendung wird immer benötigt</target>
+                <target>Ez az alkalmazás mindig kötelező</target>
             </trans-unit>
             <trans-unit id="app.purposes">
                 <source>Purposes</source>
-                <target>Zwecke</target>
+                <target>Célok</target>
             </trans-unit>
             <trans-unit id="app.purpose">
                 <source>Purpose</source>
-                <target>Zweck</target>
+                <target>Cél</target>
             </trans-unit>
         </body>
     </file>

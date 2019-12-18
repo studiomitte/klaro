@@ -1,98 +1,82 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <xliff version="1.0">
-    <file source-language="en" target-language="de" date="2019-12-18T12:35:57+01:00">
+    <file source-language="en" target-language="pl" date="2019-12-18T12:35:57+01:00">
         <body>
             <trans-unit id="consentModal.title">
                 <source>Information that we collect</source>
-                <target>Informationen die wir sammeln</target>
+                <target>Informacje, które zbieramy</target>
             </trans-unit>
             <trans-unit id="consentModal.description">
                 <source>Here you can see and customize the information that we collect about you.</source>
-                <target>Hier können Sie einsehen und anpassen, welche Information wir über Sie sammeln.</target>
+                <target>Tutaj możesz zobaczyć i dostosować informacje, które zbieramy o Tobie.</target>
             </trans-unit>
             <trans-unit id="privacyPolicy.title">
                 <source>privacy policy</source>
-                <target>Datenschutzerklärung</target>
+                <target>polityka prywatności</target>
             </trans-unit>
             <trans-unit id="privacyPolicy.text">
                 <source>To learn more, please read our {privacyPolicy}.</source>
-                <target>Bitte lesen Sie unsere {privacyPolicy} um weitere Details zu erfahren.</target>
+                <target>Aby dowiedzieć się więcej, przeczytaj naszą {privacyPolicy}.</target>
             </trans-unit>
             <trans-unit id="ok">
                 <source>OK</source>
-                <target>Los geht&#39;s!</target>
+                <target>OK</target>
             </trans-unit>
             <trans-unit id="close">
                 <source>Save</source>
-                <target>Schließen</target>
+                <target>Zamknij</target>
             </trans-unit>
             <trans-unit id="decline">
                 <source>Decline</source>
-                <target>Ablehnen</target>
+                <target>Rezygnacja</target>
             </trans-unit>
             <trans-unit id="save">
                 <source>Save</source>
-                <target>Speichern</target>
-            </trans-unit>
-            <trans-unit id="googleTagManager.description">
-                <source>Embed additional JavaScript files</source>
-                <target>Einbinden von zusätzlichem JavaScript</target>
-            </trans-unit>
-            <trans-unit id="googleAnalytics.description">
-                <source>Collection of visitor statistics</source>
-                <target>Sammeln von Besucherstatistiken</target>
-            </trans-unit>
-            <trans-unit id="purposes.analytics">
-                <source>Collection of visitor statistics</source>
-                <target>Besucher-Statistiken</target>
-            </trans-unit>
-            <trans-unit id="purposes.security">
-                <source>Security</source>
-                <target>Sicherheit</target>
+                <target>Zapisz</target>
             </trans-unit>
             <trans-unit id="consentNotice.description">
                 <source>We collect and process your personal information for the following purposes: {purposes}.</source>
-                <target>Wir speichern und verarbeiten Ihre personenbezogenen Informationen für folgende Zwecke: {purposes}.</target>
+                <target>Zbieramy i przetwarzamy dane osobowe w następujących celach: {purposes}.</target>
             </trans-unit>
             <trans-unit id="consentNotice.changeDescription">
                 <source>There were changes since your last visit, please update your consent.</source>
-                <target>Es gab Änderungen seit Ihrem letzten Besuch, bitte aktualisieren Sie Ihre Auswahl.</target>
+                <target>Nastąpiły zmiany od Twojej ostatniej wizyty, zaktualizuj swoją zgodę.</target>
             </trans-unit>
             <trans-unit id="consentNotice.learnMore">
                 <source>Learn more</source>
-                <target>Mehr erfahren</target>
+                <target>Dowiedz się więcej</target>
             </trans-unit>
             <trans-unit id="app.disableAll.title">
                 <source>Toggle all apps</source>
-                <target>Alle Anwendungen aktivieren/deaktivieren</target>
+                <target>Przełącz dla wszystkich aplikacji</target>
             </trans-unit>
             <trans-unit id="app.disableAll.description">
                 <source>Use this switch to enable/disable all apps.</source>
-                <target>Nutzen Sie diesen Schalter um alle Apps zu aktivieren/deaktivieren.</target>
+                <target>Użyj przełącznika, aby włączyć/wyłączyć wszystkie aplikacje.</target>
             </trans-unit>
             <trans-unit id="app.optOut.title">
                 <source>(opt-out)</source>
-                <target>(Opt-Out)</target>
+                <target>(rezygnacja)</target>
             </trans-unit>
             <trans-unit id="app.optOut.description">
                 <source>This app is loaded by default (but you can opt out)</source>
-                <target>Diese Anwendung wird standardmäßig gelanden (aber Sie können sie deaktivieren)</target>
+                <target>Ta aplikacja jest domyślnie ładowana (ale możesz zrezygnować)</target>
             </trans-unit>
             <trans-unit id="app.required.title">
                 <source>(always required)</source>
-                <target>(immer notwendig)</target>
+                <target>(zawsze wymagane)</target>
             </trans-unit>
             <trans-unit id="app.required.description">
                 <source>This application is always required</source>
-                <target>Diese Anwendung wird immer benötigt</target>
+                <target>Ta alikacja jest zawsze wymagana</target>
             </trans-unit>
             <trans-unit id="app.purposes">
                 <source>Purposes</source>
-                <target>Zwecke</target>
+                <target>Cele</target>
             </trans-unit>
             <trans-unit id="app.purpose">
                 <source>Purpose</source>
-                <target>Zweck</target>
+                <target>Cel</target>
             </trans-unit>
         </body>
     </file>
