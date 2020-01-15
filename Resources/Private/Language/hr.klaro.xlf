@@ -1,99 +1,82 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <xliff version="1.0">
-    <file source-language="en" target-language="de" date="2019-12-18T12:35:57+01:00">
+    <file source-language="en" target-language="hr" date="2019-12-18T12:35:57+01:00">
         <body>
             <trans-unit id="consentModal.title">
                 <source>Information that we collect</source>
-                <target>Informationen, die wir sammeln</target>
+                <target>Πληροφορίες που συλλέγουμε</target>
             </trans-unit>
             <trans-unit id="consentModal.description">
                 <source>Here you can see and customize the information that we collect about you.</source>
-                <target>Hier können sie einsehen und anpassen, welche Informationen wir über sie sammeln.</target>
+                <target>Εδώ μπορείς να δεις και να ρυθμίσεις τις πληροφορίες που συλλέγουμε σχετικά με εσένα</target>
             </trans-unit>
             <trans-unit id="privacyPolicy.title">
                 <source>privacy policy</source>
-                <target>Datenschutzerklärung</target>
+                <target>Πολιτική Απορρήτου</target>
             </trans-unit>
             <trans-unit id="privacyPolicy.text">
                 <source>To learn more, please read our {privacyPolicy}.</source>
-                <target>Bitte lesen sie unsere {privacyPolicy}.</target>
+                <target>Για περισσότερες πληροφορίες, παρακαλώ διαβάστε την {privacyPolicy}.</target>
             </trans-unit>
             <trans-unit id="ok">
                 <source>OK</source>
-                <target>Los geht&#39;s!</target>
+                <target>OK</target>
             </trans-unit>
             <trans-unit id="close">
                 <source>Save</source>
-                <target>Schließen</target>
+                <target>Κλείσιμο</target>
             </trans-unit>
             <trans-unit id="decline">
                 <source>Decline</source>
-                <target>Ablehnen</target>
+                <target>Απόρριπτω</target>
             </trans-unit>
             <trans-unit id="save">
                 <source>Save</source>
-                <target>Speichern</target>
-            </trans-unit>
-            <trans-unit id="googleTagManager.description">
-                <source>Embed additional JavaScript files</source>
-                <target>Einbinden von zusätzlichem JavaScript</target>
-            </trans-unit>
-            <trans-unit id="googleAnalytics.description">
-                <source>Collection of visitor statistics</source>
-                <target>Sammeln von Besucherstatistiken</target>
-            </trans-unit>
-            <trans-unit id="purposes.analytics">
-                <source>Collection of visitor statistics</source>
-                <target>Sammeln von Besucherstatistiken</target>
-            </trans-unit>
-            <trans-unit id="purposes.security">
-                <source>Security</source>
-                <target>Sicherheit</target>
+                <target>Αποθήκευση</target>
             </trans-unit>
             <trans-unit id="consentNotice.description">
                 <source>We collect and process your personal information for the following purposes: {purposes}.</source>
-                <target>Wir speichern und verarbeiten Ihre personenbezogenen Informationen für folgende Zwecke: {purposes}.</target>
+                <target>Συγκεντρώνουμε και επεξεργαζόμαστε τα προσωπικά δεδομένα σας για τους παρακάτω λόγους: {purposes}.</target>
             </trans-unit>
             <trans-unit id="consentNotice.changeDescription">
                 <source>There were changes since your last visit, please update your consent.</source>
-                <target>Es gab Änderungen seit Ihrem letzten Besuch, bitte aktualisieren Sie Ihre Auswahl.</target>
+                <target>Πραγματοποιήθηκαν αλλαγές μετά την τελευταία σας επίσκεψη παρακαλούμε ανανεώστε την συγκατάθεση σας</target>
             </trans-unit>
             <trans-unit id="consentNotice.learnMore">
                 <source>Learn more</source>
-                <target>mehr erfahren
-                </target>
+                <target>Περισσότερα</target>
             </trans-unit>
             <trans-unit id="app.disableAll.title">
                 <source>Toggle all apps</source>
-                <target>Alle Anwendungen aktivieren/deaktivieren</target>
+                <target>Για όλες τις εφαρμογές</target>
             </trans-unit>
             <trans-unit id="app.disableAll.description">
                 <source>Use this switch to enable/disable all apps.</source>
-                <target>Nutzen Sie diesen Schalter um alle Apps zu aktivieren/deaktivieren.</target>
+                <target>Χρησιμοποίησε αυτό τον διακόπτη για να ενεργοποιήσεις/απενεργοποιήσεις όλες τις εφαρμογές</target>
             </trans-unit>
             <trans-unit id="app.optOut.title">
                 <source>(opt-out)</source>
-                <target>(Opt-Out)</target>
+                <target>(μη απαιτούμενο)</target>
             </trans-unit>
             <trans-unit id="app.optOut.description">
                 <source>This app is loaded by default (but you can opt out)</source>
-                <target>Diese Anwendung wird standardmäßig gelanden (aber Sie können sie deaktivieren)</target>
+                <target>Είναι προκαθορισμένο να φορτώνεται, άλλα μπορεί να παραληφθεί</target>
             </trans-unit>
             <trans-unit id="app.required.title">
                 <source>(always required)</source>
-                <target>(immer notwendig)</target>
+                <target>(απαιτούμενο)</target>
             </trans-unit>
             <trans-unit id="app.required.description">
                 <source>This application is always required</source>
-                <target>Diese Anwendung wird immer benötigt</target>
+                <target>Δεν γίνεται να λειτουργήσει σωστά η εφαρμογή χωρίς αυτό</target>
             </trans-unit>
             <trans-unit id="app.purposes">
                 <source>Purposes</source>
-                <target>Zwecke</target>
+                <target>Σκοποί</target>
             </trans-unit>
             <trans-unit id="app.purpose">
                 <source>Purpose</source>
-                <target>Zweck</target>
+                <target>Σκοπός</target>
             </trans-unit>
         </body>
     </file>
