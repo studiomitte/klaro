@@ -74,6 +74,7 @@ class PageRendererHook
         $this->pageRenderer->addJsInlineCode('klaro-trans',
             'var klaroConfigTranslations = {
                 lang: ' . GeneralUtility::quoteJSvalue($currentLanguage) . ',
+                ' . ((bool)$siteConfiguration['klaro_must_consent'] ? 'mustConsent:true,' : '') . '
                 translations: {
                     ' . $currentLanguage . ': ' . $this->includeLanguageFileForInline($languageFile) . '
                 }' . $privacyLinkConfiguration . '

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <xliff version="1.0">
-    <file source-language="en" target-language="de" date="2019-12-18T12:35:57+01:00">
+    <file source-language="en" target-language="de" date="2020-01-21T13:13:54+01:00">
         <body>
             <trans-unit id="consentModal.title">
                 <source>Information that we collect</source>
@@ -43,12 +43,24 @@
                 <target>Sammeln von Besucherstatistiken</target>
             </trans-unit>
             <trans-unit id="purposes.analytics">
-                <source>Collection of visitor statistics</source>
-                <target>Besucher-Statistiken</target>
+                <source>Analytics</source>
+                <target>Analytics</target>
             </trans-unit>
             <trans-unit id="purposes.security">
                 <source>Security</source>
                 <target>Sicherheit</target>
+            </trans-unit>
+            <trans-unit id="purposes.advertising">
+                <source>Showing ads</source>
+                <target>Anzeigen von Werbung</target>
+            </trans-unit>
+            <trans-unit id="purposes.general">
+                <source>General</source>
+                <target>Allgemein</target>
+            </trans-unit>
+            <trans-unit id="purposes.personalized">
+                <source>Personalized Marketing</source>
+                <target>Personalisiertes Marketing</target>
             </trans-unit>
             <trans-unit id="consentNotice.description">
                 <source>We collect and process your personal information for the following purposes: {purposes}.</source>
@@ -93,6 +105,22 @@
             <trans-unit id="app.purpose">
                 <source>Purpose</source>
                 <target>Zweck</target>
+            </trans-unit>
+            <trans-unit id="klaro.description">
+                <source>Consent Management</source>
+                <target>Consent Management</target>
+            </trans-unit>
+            <trans-unit id="chat.description">
+                <source>Support-Chat</source>
+                <target>Support-Chat</target>
+            </trans-unit>
+            <trans-unit id="googleAnalyticsRemarketing.description">
+                <source>Google Analytics Remarketing</source>
+                <target>Google Analytics Remarketing</target>
+            </trans-unit>
+            <trans-unit id="facebookPixel.description">
+                <source>Facebook Pixel</source>
+                <target>Facebook Pixel</target>
             </trans-unit>
         </body>
     </file>
