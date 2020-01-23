@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <xliff version="1.0">
-    <file source-language="en" target-language="de" date="2019-12-03T12:28:39+01:00">
+    <file source-language="en" target-language="de" date="2020-01-21T11:57:29+01:00">
         <body>
             <trans-unit id="site.configuration.enable">
                 <source>Enable</source>
@@ -17,6 +17,14 @@
             <trans-unit id="site.configuration.language_file">
                 <source>Path to the language file</source>
                 <target>Pfad zur Sprachdatei</target>
+            </trans-unit>
+            <trans-unit id="site.configuration.must_consent">
+                <source>Show full consent modal box</source>
+                <target>Zeige Einstellungsfenster</target>
+            </trans-unit>
+            <trans-unit id="site.configuration.must_consent.description">
+                <source>Force user for consent</source>
+                <target>Zwinge den User zu einer Einstellung</target>
             </trans-unit>
             <trans-unit id="site.configuration.tab">
                 <source>Klaro Cookie Settings</source>

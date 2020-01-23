@@ -33,6 +33,14 @@ call_user_func(
                 'default' => 'EXT:klaro/Resources/Private/Language/klaro.xlf',
             ],
         ];
+        $GLOBALS['SiteConfiguration'][$table]['columns']['klaro_must_consent'] = [
+            'label' => $lll . 'site.configuration.must_consent',
+            'config' => [
+                'description' => $lll . 'site.configuration.must_consent.description',
+                'type' => 'check',
+                'default'
+            ],
+        ];
         $GLOBALS['SiteConfiguration'][$table]['columns']['klaro_style_prefix'] = [
             'label' => $lll . 'site.configuration.style_prefix',
             'config' => [
@@ -40,7 +48,7 @@ call_user_func(
             ],
         ];
         $GLOBALS['SiteConfiguration'][$table]['types']['0']['showitem'] .= '
-            ,--div--;' . $lll . 'site.configuration.tab, klaro_enable,klaro_privacy_page,klaro_configuration_file,klaro_language_file,klaro_style_prefix
+            ,--div--;' . $lll . 'site.configuration.tab, klaro_enable,klaro_privacy_page,klaro_configuration_file,klaro_language_file,klaro_must_consent,klaro_style_prefix
          ';
     },
     'site'
