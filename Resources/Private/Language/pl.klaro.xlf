@@ -16,8 +16,8 @@
             </trans-unit>
             <trans-unit id="privacyPolicy.text">
                 <source>To learn more, please read our {privacyPolicy}.</source>
-                <target>Prosimy o wcześniejsze zapoznanie z naszym oświadczeniem o ochronie danych osobowych</target>
-<!--                TODO variable-->
+                <target>Prosimy o wcześniejsze zapoznanie z naszym oświadczeniem o ochronie danych osobowych {privacyPolicy}</target>
+<!--                TODO anpassung Grammatik-->
             </trans-unit>
             <trans-unit id="ok">
                 <source>OK</source>
@@ -53,7 +53,7 @@
             </trans-unit>
             <trans-unit id="consentNotice.description">
                 <source>We collect and process your personal information for the following purposes: {purposes}.</source>
-                <target>Gromadzimy i przetwarzamy Państwa dane osobowe do celów statystycznych.</target>
+                <target>Gromadzimy i przetwarzamy Państwa dane osobowe do celów statystycznych. {purposes}</target>
 <!--                TODO Variable-->
             </trans-unit>
             <trans-unit id="consentNotice.changeDescription">

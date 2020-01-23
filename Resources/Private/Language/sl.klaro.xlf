@@ -52,7 +52,7 @@
             </trans-unit>
             <trans-unit id="consentNotice.description">
                 <source>We collect and process your personal information for the following purposes: {purposes}.</source>
-                <target>Vaše osebne podatke shranjujemo in obdelujemo le za namen statistike obiskov.</target>
+                <target>Vaše osebne podatke shranjujemo in obdelujemo le za namen statistike obiskov. purposes}</target>
 <!--                TODO-->
             </trans-unit>
             <trans-unit id="consentNotice.changeDescription">

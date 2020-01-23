@@ -16,8 +16,7 @@
             </trans-unit>
             <trans-unit id="privacyPolicy.text">
                 <source>To learn more, please read our {privacyPolicy}.</source>
-                <target>Další podrobnosti si, prosím, přečtěte v Ochraně osobních údajů.</target>
-<!--                TODO Variable-->
+                <target>Další podrobnosti si, prosím, přečtěte v {privacyPolicy}.</target>
             </trans-unit>
             <trans-unit id="ok">
                 <source>OK</source>
