@@ -4,79 +4,97 @@
         <body>
             <trans-unit id="consentModal.title">
                 <source>Information that we collect</source>
-                <target>Πληροφορίες που συλλέγουμε</target>
+                <target>Podaci koje prikupljamo</target>
             </trans-unit>
             <trans-unit id="consentModal.description">
                 <source>Here you can see and customize the information that we collect about you.</source>
-                <target>Εδώ μπορείς να δεις και να ρυθμίσεις τις πληροφορίες που συλλέγουμε σχετικά με εσένα</target>
+                <target>Ovde možete pogledati i prilagoditi podatke koje o Vama sakupljamo.</target>
             </trans-unit>
             <trans-unit id="privacyPolicy.title">
                 <source>privacy policy</source>
-                <target>Πολιτική Απορρήτου</target>
+                <target>pravila o privatnosti</target>
             </trans-unit>
             <trans-unit id="privacyPolicy.text">
                 <source>To learn more, please read our {privacyPolicy}.</source>
-                <target>Για περισσότερες πληροφορίες, παρακαλώ διαβάστε την {privacyPolicy}.</target>
+                <target>Molimo Vas pročitajte naš {privacyPolicy} da biste saznali više detalja.</target>
             </trans-unit>
             <trans-unit id="ok">
                 <source>OK</source>
-                <target>OK</target>
+                <target>Sprejmi</target>
             </trans-unit>
             <trans-unit id="close">
                 <source>Save</source>
-                <target>Κλείσιμο</target>
+                <target>Zapri</target>
             </trans-unit>
             <trans-unit id="decline">
                 <source>Decline</source>
-                <target>Απόρριπτω</target>
+                <target>Zavrni</target>
             </trans-unit>
             <trans-unit id="save">
                 <source>Save</source>
-                <target>Αποθήκευση</target>
+                <target>Shrani</target>
+            </trans-unit>
+            <trans-unit id="googleTagManager.description">
+                <source>Embed additional JavaScript files</source>
+                <target>Uključivanje dodatnog JavaScripta</target>
+            </trans-unit>
+            <trans-unit id="googleAnalytics.description">
+                <source>Collection of visitor statistics</source>
+                <target>Sakupljanje statistika o posećenosti</target>
+            </trans-unit>
+            <trans-unit id="purposes.analytics">
+                <source>Collection of visitor statistics</source>
+                <target>Sakupljanje statistika o posećenosti</target>
+            </trans-unit>
+            <trans-unit id="purposes.security">
+                <source>Security</source>
+                <target>Sicherheit</target>
             </trans-unit>
             <trans-unit id="consentNotice.description">
                 <source>We collect and process your personal information for the following purposes: {purposes}.</source>
-                <target>Συγκεντρώνουμε και επεξεργαζόμαστε τα προσωπικά δεδομένα σας για τους παρακάτω λόγους: {purposes}.</target>
+                <target>Čuvamo i obrađujemo Vaše lične podatke iz sledećeg razloga: {purposes}.</target>
             </trans-unit>
             <trans-unit id="consentNotice.changeDescription">
                 <source>There were changes since your last visit, please update your consent.</source>
-                <target>Πραγματοποιήθηκαν αλλαγές μετά την τελευταία σας επίσκεψη παρακαλούμε ανανεώστε την συγκατάθεση σας</target>
+                <target>Došlo je do promena od vaše poslednje posete, molimo vas da ažurirate svoju saglasnost.</target>
             </trans-unit>
             <trans-unit id="consentNotice.learnMore">
                 <source>Learn more</source>
-                <target>Περισσότερα</target>
+                <target>Više o tome saznajte</target>
             </trans-unit>
             <trans-unit id="app.disableAll.title">
                 <source>Toggle all apps</source>
-                <target>Για όλες τις εφαρμογές</target>
+                <target>Sve opcije uključiti/isključiti</target>
             </trans-unit>
             <trans-unit id="app.disableAll.description">
                 <source>Use this switch to enable/disable all apps.</source>
-                <target>Χρησιμοποίησε αυτό τον διακόπτη για να ενεργοποιήσεις/απενεργοποιήσεις όλες τις εφαρμογές</target>
+                <target>Pomoću ovog prekidača aktivirajte / deaktivirajte sve aplikacije.</target>
             </trans-unit>
             <trans-unit id="app.optOut.title">
                 <source>(opt-out)</source>
-                <target>(μη απαιτούμενο)</target>
+                <target>(deaktivirati)</target>
             </trans-unit>
             <trans-unit id="app.optOut.description">
                 <source>This app is loaded by default (but you can opt out)</source>
-                <target>Είναι προκαθορισμένο να φορτώνεται, άλλα μπορεί να παραληφθεί</target>
+                <target>DOva aplikacija je učitana automatski (ali je možete deaktivirati)</target>
             </trans-unit>
             <trans-unit id="app.required.title">
                 <source>(always required)</source>
-                <target>(απαιτούμενο)</target>
+                <target>(uvek neophodno)</target>
             </trans-unit>
             <trans-unit id="app.required.description">
                 <source>This application is always required</source>
-                <target>Δεν γίνεται να λειτουργήσει σωστά η εφαρμογή χωρίς αυτό</target>
+                <target>Ova aplikacija je uvek potrebna</target>
             </trans-unit>
             <trans-unit id="app.purposes">
                 <source>Purposes</source>
-                <target>Σκοποί</target>
+                <target>Svrhe
+                </target>
             </trans-unit>
             <trans-unit id="app.purpose">
                 <source>Purpose</source>
-                <target>Σκοπός</target>
+                <target>Svrha
+                </target>
             </trans-unit>
         </body>
     </file>
