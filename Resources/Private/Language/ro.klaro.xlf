@@ -4,79 +4,95 @@
         <body>
             <trans-unit id="consentModal.title">
                 <source>Information that we collect</source>
-                <target>Πληροφορίες που συλλέγουμε</target>
+                <target>Informatii pe care le culegem</target>
             </trans-unit>
             <trans-unit id="consentModal.description">
                 <source>Here you can see and customize the information that we collect about you.</source>
-                <target>Εδώ μπορείς να δεις και να ρυθμίσεις τις πληροφορίες που συλλέγουμε σχετικά με εσένα</target>
+                <target>Aici puteti vedea si ajusta ce informatii colectam despre dumneavoastra.</target>
             </trans-unit>
             <trans-unit id="privacyPolicy.title">
                 <source>privacy policy</source>
-                <target>Πολιτική Απορρήτου</target>
+                <target>Politica pentru protectia datelor</target>
             </trans-unit>
             <trans-unit id="privacyPolicy.text">
                 <source>To learn more, please read our {privacyPolicy}.</source>
-                <target>Για περισσότερες πληροφορίες, παρακαλώ διαβάστε την {privacyPolicy}.</target>
+                <target>Va rugam sa cititi {privacyPolicy} pentru mai multe detalii.</target>
             </trans-unit>
             <trans-unit id="ok">
                 <source>OK</source>
-                <target>OK</target>
+                <target>De acord</target>
             </trans-unit>
             <trans-unit id="close">
                 <source>Save</source>
-                <target>Κλείσιμο</target>
+                <target>Inchide</target>
             </trans-unit>
             <trans-unit id="decline">
                 <source>Decline</source>
-                <target>Απόρριπτω</target>
+                <target>Refuz</target>
             </trans-unit>
             <trans-unit id="save">
                 <source>Save</source>
-                <target>Αποθήκευση</target>
+                <target>Salveaza</target>
+            </trans-unit>
+            <trans-unit id="googleTagManager.description">
+                <source>Embed additional JavaScript files</source>
+                <target>Integrarea de JavaScript suplimentar</target>
+            </trans-unit>
+            <trans-unit id="googleAnalytics.description">
+                <source>Collection of visitor statistics</source>
+                <target>Colectarea de statistici ale vizitatorilor</target>
+            </trans-unit>
+            <trans-unit id="purposes.analytics">
+                <source>Collection of visitor statistics</source>
+                <target>Colectarea de statistici ale vizitatorilor</target>
+            </trans-unit>
+            <trans-unit id="purposes.security">
+                <source>Security</source>
+                <target>Securitate</target>
             </trans-unit>
             <trans-unit id="consentNotice.description">
                 <source>We collect and process your personal information for the following purposes: {purposes}.</source>
-                <target>Συγκεντρώνουμε και επεξεργαζόμαστε τα προσωπικά δεδομένα σας για τους παρακάτω λόγους: {purposes}.</target>
+                <target>Stocam si prelucram informatiile dumneavoastra personale in urmatoarele scopuri: {purposes}.</target>
             </trans-unit>
             <trans-unit id="consentNotice.changeDescription">
                 <source>There were changes since your last visit, please update your consent.</source>
-                <target>Πραγματοποιήθηκαν αλλαγές μετά την τελευταία σας επίσκεψη παρακαλούμε ανανεώστε την συγκατάθεση σας</target>
+                <target>Au existat modificari de la ultima vizita, va rog sa actualizati consimtamantul dumneavoastra.</target>
             </trans-unit>
             <trans-unit id="consentNotice.learnMore">
                 <source>Learn more</source>
-                <target>Περισσότερα</target>
+                <target>Aflati mai multe</target>
             </trans-unit>
             <trans-unit id="app.disableAll.title">
                 <source>Toggle all apps</source>
-                <target>Για όλες τις εφαρμογές</target>
+                <target>Activati/dezactivati toate aplicatiile</target>
             </trans-unit>
             <trans-unit id="app.disableAll.description">
                 <source>Use this switch to enable/disable all apps.</source>
-                <target>Χρησιμοποίησε αυτό τον διακόπτη για να ενεργοποιήσεις/απενεργοποιήσεις όλες τις εφαρμογές</target>
+                <target>Utilizati acest buton pentru a activa/dezactiva toate aplicatiile.</target>
             </trans-unit>
             <trans-unit id="app.optOut.title">
                 <source>(opt-out)</source>
-                <target>(μη απαιτούμενο)</target>
+                <target>(Optiune de renuntare)</target>
             </trans-unit>
             <trans-unit id="app.optOut.description">
                 <source>This app is loaded by default (but you can opt out)</source>
-                <target>Είναι προκαθορισμένο να φορτώνεται, άλλα μπορεί να παραληφθεί</target>
+                <target>Aceasta aplicatie este incarcata implicit (dar puteti renunta)</target>
             </trans-unit>
             <trans-unit id="app.required.title">
                 <source>(always required)</source>
-                <target>(απαιτούμενο)</target>
+                <target>(obligatoriu intotdeauna)</target>
             </trans-unit>
             <trans-unit id="app.required.description">
                 <source>This application is always required</source>
-                <target>Δεν γίνεται να λειτουργήσει σωστά η εφαρμογή χωρίς αυτό</target>
+                <target>Aceasta aplicatie este necesara intotdeauna.</target>
             </trans-unit>
             <trans-unit id="app.purposes">
                 <source>Purposes</source>
-                <target>Σκοποί</target>
+                <target>Scopuri</target>
             </trans-unit>
             <trans-unit id="app.purpose">
                 <source>Purpose</source>
-                <target>Σκοπός</target>
+                <target>Scop</target>
             </trans-unit>
         </body>
     </file>

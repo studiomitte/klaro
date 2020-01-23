@@ -4,23 +4,24 @@
         <body>
             <trans-unit id="consentModal.title">
                 <source>Information that we collect</source>
-                <target>Informacje, które zbieramy</target>
+                <target>Informacje, które gromadzimy</target>
             </trans-unit>
             <trans-unit id="consentModal.description">
                 <source>Here you can see and customize the information that we collect about you.</source>
-                <target>Tutaj możesz zobaczyć i dostosować informacje, które zbieramy o Tobie.</target>
+                <target>W tym miejscu mogą Państwo zdecydować, które informacje będziemy mogli gromadzić.</target>
             </trans-unit>
             <trans-unit id="privacyPolicy.title">
                 <source>privacy policy</source>
-                <target>polityka prywatności</target>
+                <target>Polityka prywatności</target>
             </trans-unit>
             <trans-unit id="privacyPolicy.text">
                 <source>To learn more, please read our {privacyPolicy}.</source>
-                <target>Aby dowiedzieć się więcej, przeczytaj naszą {privacyPolicy}.</target>
+                <target>Prosimy o wcześniejsze zapoznanie z naszym oświadczeniem o ochronie danych osobowych</target>
+<!--                TODO variable-->
             </trans-unit>
             <trans-unit id="ok">
                 <source>OK</source>
-                <target>OK</target>
+                <target>Akceptuję.</target>
             </trans-unit>
             <trans-unit id="close">
                 <source>Save</source>
@@ -28,19 +29,36 @@
             </trans-unit>
             <trans-unit id="decline">
                 <source>Decline</source>
-                <target>Rezygnacja</target>
+                <target>Odmawiam.</target>
             </trans-unit>
             <trans-unit id="save">
                 <source>Save</source>
-                <target>Zapisz</target>
+                <target>Zachowaj moje ustawienia.</target>
+            </trans-unit>
+            <trans-unit id="googleTagManager.description">
+                <source>Embed additional JavaScript files</source>
+                <target>Gromadzenie statystyk odwiedzin, aktywacja JavaScript</target>
+            </trans-unit>
+            <trans-unit id="googleAnalytics.description">
+                <source>Collection of visitor statistics</source>
+                <target>Gromadzenie i analiza statystyk odwiedzin</target>
+            </trans-unit>
+            <trans-unit id="purposes.analytics">
+                <source>Collection of visitor statistics</source>
+                <target>Gromadzenie i analiza statystyk odwiedzin</target>
+            </trans-unit>
+            <trans-unit id="purposes.security">
+                <source>Security</source>
+                <target>Ochrona</target>
             </trans-unit>
             <trans-unit id="consentNotice.description">
                 <source>We collect and process your personal information for the following purposes: {purposes}.</source>
-                <target>Zbieramy i przetwarzamy dane osobowe w następujących celach: {purposes}.</target>
+                <target>Gromadzimy i przetwarzamy Państwa dane osobowe do celów statystycznych.</target>
+<!--                TODO Variable-->
             </trans-unit>
             <trans-unit id="consentNotice.changeDescription">
                 <source>There were changes since your last visit, please update your consent.</source>
-                <target>Nastąpiły zmiany od Twojej ostatniej wizyty, zaktualizuj swoją zgodę.</target>
+                <target>Od Państwa ostatnich odwiedzin pojawiły się zmiany. Prosimy o aktualizację Państwa wyborów</target>
             </trans-unit>
             <trans-unit id="consentNotice.learnMore">
                 <source>Learn more</source>
@@ -48,35 +66,35 @@
             </trans-unit>
             <trans-unit id="app.disableAll.title">
                 <source>Toggle all apps</source>
-                <target>Przełącz dla wszystkich aplikacji</target>
+                <target>Włączenie/Wyłączenie aplikacji:</target>
             </trans-unit>
             <trans-unit id="app.disableAll.description">
                 <source>Use this switch to enable/disable all apps.</source>
-                <target>Użyj przełącznika, aby włączyć/wyłączyć wszystkie aplikacje.</target>
+                <target>Prosimy o użycie przycisku do aktywacji lub deaktywacji aplikacji</target>
             </trans-unit>
             <trans-unit id="app.optOut.title">
                 <source>(opt-out)</source>
-                <target>(rezygnacja)</target>
+                <target>(opt-Out)</target>
             </trans-unit>
             <trans-unit id="app.optOut.description">
                 <source>This app is loaded by default (but you can opt out)</source>
-                <target>Ta aplikacja jest domyślnie ładowana (ale możesz zrezygnować)</target>
+                <target>Domyślnym ustawieniem jest aktywacja tej aplikacji, ale mogą ją Państwo deaktywować.</target>
             </trans-unit>
             <trans-unit id="app.required.title">
                 <source>(always required)</source>
-                <target>(zawsze wymagane)</target>
+                <target>(aplikacja konieczna do zainstalowania)</target>
             </trans-unit>
             <trans-unit id="app.required.description">
                 <source>This application is always required</source>
-                <target>Ta alikacja jest zawsze wymagana</target>
+                <target>aplikacja konieczna do zainstalowania</target>
             </trans-unit>
             <trans-unit id="app.purposes">
                 <source>Purposes</source>
-                <target>Cele</target>
+                <target>cele</target>
             </trans-unit>
             <trans-unit id="app.purpose">
                 <source>Purpose</source>
-                <target>Cel</target>
+                <target>cel</target>
             </trans-unit>
         </body>
     </file>

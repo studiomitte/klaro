@@ -4,79 +4,96 @@
         <body>
             <trans-unit id="consentModal.title">
                 <source>Information that we collect</source>
-                <target>Informazioni che raccogliamo</target>
+                <target>Informace, které shromažďujeme</target>
             </trans-unit>
             <trans-unit id="consentModal.description">
                 <source>Here you can see and customize the information that we collect about you.</source>
-                <target>Qui puoi vedere e scegliere le informazioni che raccogliamo su di te.</target>
+                <target>Zde můžete vidět a přizpůsobit nastavení, které Vaše informace shromažďujeme.</target>
             </trans-unit>
             <trans-unit id="privacyPolicy.title">
                 <source>privacy policy</source>
-                <target>policy privacy</target>
+                <target>Ochrana osobních údajů</target>
             </trans-unit>
             <trans-unit id="privacyPolicy.text">
                 <source>To learn more, please read our {privacyPolicy}.</source>
-                <target>Per saperne di più, leggi la nostra {privacyPolicy}.</target>
+                <target>Další podrobnosti si, prosím, přečtěte v Ochraně osobních údajů.</target>
+<!--                TODO Variable-->
             </trans-unit>
             <trans-unit id="ok">
                 <source>OK</source>
-                <target>OK</target>
+                <target>Potvrdit</target>
             </trans-unit>
             <trans-unit id="close">
                 <source>Save</source>
-                <target>Chiudi</target>
+                <target>Zavřít</target>
             </trans-unit>
             <trans-unit id="decline">
                 <source>Decline</source>
-                <target>Rifiuta</target>
+                <target>Odmítnout</target>
             </trans-unit>
             <trans-unit id="save">
                 <source>Save</source>
-                <target>Salva</target>
+                <target>Uložit</target>
+            </trans-unit>
+            <trans-unit id="googleTagManager.description">
+                <source>Embed additional JavaScript files</source>
+                <target>Připojení dodatečných JavaScript</target>
+            </trans-unit>
+            <trans-unit id="googleAnalytics.description">
+                <source>Collection of visitor statistics</source>
+                <target>Shromažďování statistik návštěvnosti</target>
+            </trans-unit>
+            <trans-unit id="purposes.analytics">
+                <source>Collection of visitor statistics</source>
+                <target>Shromažďování statistik návštěvnosti</target>
+            </trans-unit>
+            <trans-unit id="purposes.security">
+                <source>Security</source>
+                <target>Zabezpečení</target>
             </trans-unit>
             <trans-unit id="consentNotice.description">
                 <source>We collect and process your personal information for the following purposes: {purposes}.</source>
-                <target>Raccogliamo ed elaboriamo le vostre informazioni personali per i seguenti scopi: {purposes}.</target>
+                <target>Vaše osobní údaje jsou zpracovávány a ukládány pro následující účely: Statistiky návštěvnosti.</target>
             </trans-unit>
             <trans-unit id="consentNotice.changeDescription">
                 <source>There were changes since your last visit, please update your consent.</source>
-                <target>Ci sono stati cambiamenti dalla tua ultima visita, aggiorna il tuo consenso.</target>
+                <target>Od Vaší poslední návštěvy došlo k některým změnám, proveďte, prosím, aktualizaci Vašeho nastavení.</target>
             </trans-unit>
             <trans-unit id="consentNotice.learnMore">
                 <source>Learn more</source>
-                <target>Scopri di più</target>
+                <target>Dozvědět se víc</target>
             </trans-unit>
             <trans-unit id="app.disableAll.title">
                 <source>Toggle all apps</source>
-                <target>Cambia per tutte le app</target>
+                <target>Zapnout/vypnout všechny aplikace</target>
             </trans-unit>
             <trans-unit id="app.disableAll.description">
                 <source>Use this switch to enable/disable all apps.</source>
-                <target>Usa questo interruttore per abilitare/disabilitare tutte le app.</target>
+                <target>Pro zapnutí/vypnutí všech aplikací použijte tento přepínač.</target>
             </trans-unit>
             <trans-unit id="app.optOut.title">
                 <source>(opt-out)</source>
-                <target>(opt-out)</target>
+                <target>(Opt-Out)</target>
             </trans-unit>
             <trans-unit id="app.optOut.description">
                 <source>This app is loaded by default (but you can opt out)</source>
-                <target>Quest&#39;applicazione è caricata di default (ma puoi disattivarla)</target>
+                <target>Tato aplikace je ve výchozím nastavení zapnuta (můžete ji však vypnout)</target>
             </trans-unit>
             <trans-unit id="app.required.title">
                 <source>(always required)</source>
-                <target>(sempre richiesto)</target>
+                <target>(vždy vyžadováno)</target>
             </trans-unit>
             <trans-unit id="app.required.description">
                 <source>This application is always required</source>
-                <target>Quest&#39;applicazione è sempre richiesta</target>
+                <target>Tato aplikace je vždy vyžadována</target>
             </trans-unit>
             <trans-unit id="app.purposes">
                 <source>Purposes</source>
-                <target>Scopi</target>
+                <target>Účely</target>
             </trans-unit>
             <trans-unit id="app.purpose">
                 <source>Purpose</source>
-                <target>Scopo</target>
+                <target>Účel</target>
             </trans-unit>
         </body>
     </file>
