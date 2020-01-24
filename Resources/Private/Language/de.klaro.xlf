@@ -10,11 +10,11 @@
                 <source>Here you can see and customize the information that we collect about you.</source>
                 <target>Hier können sie einsehen und anpassen, welche Informationen wir über sie sammeln.</target>
             </trans-unit>
-            <trans-unit id="privacyPolicy.title">
+            <trans-unit id="consentModal.privacyPolicy.name">
                 <source>privacy policy</source>
                 <target>Datenschutzerklärung</target>
             </trans-unit>
-            <trans-unit id="privacyPolicy.text">
+            <trans-unit id="consentModal.privacyPolicy.text">
                 <source>To learn more, please read our {privacyPolicy}.</source>
                 <target>Bitte lesen sie unsere {privacyPolicy}.</target>
             </trans-unit>
