@@ -8,11 +8,11 @@
             </trans-unit>
             <trans-unit id="consentModal.description">
                 <source>Here you can see and customize the information that we collect about you.</source>
-                <target>ukaj imate vpogled v vse informacije o vas, katere lahko tudi urejate.</target>
+                <target>Tukaj imate vpogled v vse informacije o vas, katere lahko tudi urejate.</target>
             </trans-unit>
             <trans-unit id="privacyPolicy.title">
                 <source>privacy policy</source>
-                <target>Uredba o varstvu podatkov</target>
+                <target>uredba o varstvu podatkov</target>
             </trans-unit>
             <trans-unit id="privacyPolicy.text">
                 <source>To learn more, please read our {privacyPolicy}.</source>
@@ -40,11 +40,11 @@
             </trans-unit>
             <trans-unit id="googleAnalytics.description">
                 <source>Collection of visitor statistics</source>
-                <target>Zbiranje statistike obiskov</target>
+                <target>zbiranje statistike obiskov</target>
             </trans-unit>
             <trans-unit id="purposes.analytics">
                 <source>Collection of visitor statistics</source>
-                <target>Zbiranje statistike obiskov</target>
+                <target>zbiranje statistike obiskov</target>
             </trans-unit>
             <trans-unit id="purposes.security">
                 <source>Security</source>
@@ -52,7 +52,7 @@
             </trans-unit>
             <trans-unit id="consentNotice.description">
                 <source>We collect and process your personal information for the following purposes: {purposes}.</source>
-                <target>Vaše osebne podatke shranjujemo in obdelujemo le za namen statistike obiskov. purposes}</target>
+                <target>Vaše osebne podatke shranjujemo in obdelujemo le za namen statistike obiskov. {purposes}</target>
 <!--                TODO-->
             </trans-unit>
             <trans-unit id="consentNotice.changeDescription">
@@ -69,7 +69,7 @@
             </trans-unit>
             <trans-unit id="app.disableAll.description">
                 <source>Use this switch to enable/disable all apps.</source>
-                <target>Uporabite to stikalo, da vključite/izklučite vse aplikacije.</target>
+                <target>Uporabite to stikalo, da vključite/izključite vse aplikacije.</target>
             </trans-unit>
             <trans-unit id="app.optOut.title">
                 <source>(opt-out)</source>

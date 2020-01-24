@@ -7,8 +7,8 @@
                 <target>Podaci koje prikupljamo</target>
             </trans-unit>
             <trans-unit id="consentModal.description">
-                <source>Ovdje možete pogledati i prilagoditi podatke koje prikupljamo o Vama.</source>
-                <target>Hier können sie einsehen und anpassen, welche Informationen wir über sie sammeln.</target>
+                <source>Here you can see and customize the information that we collect about you.</source>
+                <target>Ovdje možete pogledati i prilagoditi podatke koje prikupljamo o Vama.</target>
             </trans-unit>
             <trans-unit id="privacyPolicy.title">
                 <source>privacy policy</source>
