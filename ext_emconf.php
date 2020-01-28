@@ -1,8 +1,8 @@
 <?php
 
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'Klaro',
-    'description' => '',
+    'title' => 'Klaro Cookie Consent',
+    'description' => 'Cookie consent solution following the GDPR by using the solution Klaro',
     'category' => 'frontend',
     'constraints' => [
         'depends' => [
@@ -17,7 +17,6 @@ $EM_CONF[$_EXTKEY] = [
         ],
     ],
     'state' => 'beta',
-    'uploadfolder' => 0,
-    'clearCacheOnLoad' => 1,
-    'version' => '1.0.0',
+    'clearCacheOnLoad' => true,
+    'version' => '2.0.1',
 ];
