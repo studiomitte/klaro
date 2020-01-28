@@ -16,7 +16,7 @@
     }
   ],
   "type": "typo3-cms-extension",
-  "description": "Cookie consent solution following the GDPR by using the solution by Klaro",
+  "description": "Cookie consent solution following the GDPR by using the solution Klaro",
   "homepage": "https://studiomitte.com",
   "license": [
     "GPL-2.0-or-later"

@@ -104,3 +104,9 @@ var klaroConfig = {
         },
     ],
 };
+
+if (typeof klaroConfigTranslations !== 'undefined') {
+    for (var attr in klaroConfigTranslations) {
+        klaroConfig[attr] = klaroConfigTranslations[attr];
+    }
+}
