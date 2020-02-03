@@ -1,0 +1,5 @@
+files:
+  - source: /Resources/Private/Language/klaro.xlf
+    translation: /Resources/Private/Language/%two_letters_code%.%original_file_name%
+  - source: /Resources/Private/Language/Configuration.xlf
+    translation: /Resources/Private/Language/%two_letters_code%.%original_file_name%
