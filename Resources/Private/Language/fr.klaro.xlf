@@ -1,98 +1,82 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <xliff version="1.0">
-    <file source-language="en" target-language="sk" date="2020-02-03T12:57:09+01:00">
+    <file source-language="en" target-language="fr" date="2020-02-03T12:57:09+01:00">
         <body>
             <trans-unit id="consentModal.title">
                 <source>Information that we collect</source>
-                <target>Informácie, ktoré zbierame</target>
+                <target>Les informations que nous collectons</target>
             </trans-unit>
             <trans-unit id="consentModal.description">
                 <source>Here you can see and customize the information that we collect about you.</source>
-                <target>Tu môžete vidieť a prispôsobiť si, ktoré informácie budú Vašim prezeraním stránky zaznamenávané.</target>
+                <target>Ici, vous pouvez voir et personnaliser les informations que nous collectons sur vous.</target>
             </trans-unit>
             <trans-unit id="consentModal.privacyPolicy.name">
                 <source>privacy policy</source>
-                <target>Vyhlásenie o ochrane údajov</target>
+                <target>politique de confidentialité</target>
             </trans-unit>
             <trans-unit id="consentModal.privacyPolicy.text">
                 <source>To learn more, please read our {privacyPolicy}.</source>
-                <target>Pre viac podrobností si prosím prečítajte si našu {privacyPolicy}.</target>
+                <target>Pour en savoir plus, merci de lire notre {privacyPolicy}.</target>
             </trans-unit>
             <trans-unit id="ok">
                 <source>OK</source>
-                <target>Akceptovať!</target>
+                <target>OK</target>
             </trans-unit>
             <trans-unit id="close">
                 <source>Save</source>
-                <target>Zatvoriť</target>
+                <target>Fermer</target>
             </trans-unit>
             <trans-unit id="decline">
                 <source>Decline</source>
-                <target>Odmietnuť</target>
+                <target>Refuser</target>
             </trans-unit>
             <trans-unit id="save">
                 <source>Save</source>
-                <target>Uložiť</target>
-            </trans-unit>
-            <trans-unit id="googleTagManager.description">
-                <source>Embed additional JavaScript files</source>
-                <target>pripojenie dodatočného JavaScriptu</target>
-            </trans-unit>
-            <trans-unit id="googleAnalytics.description">
-                <source>Collection of visitor statistics</source>
-                <target>návštevnosť stránky</target>
-            </trans-unit>
-            <trans-unit id="purposes.analytics">
-                <source>Analytics</source>
-                <target>návštevnosť stránky</target>
-            </trans-unit>
-            <trans-unit id="purposes.security">
-                <source>Security</source>
-                <target>Bezpečnosť</target>
+                <target>Sauvegarder</target>
             </trans-unit>
             <trans-unit id="consentNotice.description">
                 <source>We collect and process your personal information for the following purposes: {purposes}.</source>
-                <target>Ukladáme a spracovávame Vaše osobné informácie pre nasledovné účely: {purposes}.</target>
+                <target>Nous collectons et traitons vos informations personnelles dans le but suivant : {purposes}.</target>
             </trans-unit>
             <trans-unit id="consentNotice.changeDescription">
                 <source>There were changes since your last visit, please update your consent.</source>
-                <target>Od Vašej poslednej návštevy došlo k zmenám, prosím aktualizujte svoju voľbu.</target>
+                <target>Des modifications ont eu lieu depuis votre dernière visite, merci de mettre à jour votre consentement.</target>
             </trans-unit>
             <trans-unit id="consentNotice.learnMore">
                 <source>Learn more</source>
-                <target>Dozvedieť sa viac</target>
+                <target>En savoir plus</target>
             </trans-unit>
             <trans-unit id="app.disableAll.title">
                 <source>Toggle all apps</source>
-                <target>Všetky aplikácie zapnúť/vypnúť</target>
+                <target>Changer toutes les options</target>
             </trans-unit>
             <trans-unit id="app.disableAll.description">
                 <source>Use this switch to enable/disable all apps.</source>
-                <target>Použite tento prepínač na aktiváciu/deaktiváciu všetkých aplikácií.</target>
+                <target>Utiliser ce bouton pour activer/désactiver toutes les options</target>
             </trans-unit>
             <trans-unit id="app.optOut.title">
                 <source>(opt-out)</source>
-                <target>(opt-Out)</target>
+                <target>(opt-out)</target>
             </trans-unit>
             <trans-unit id="app.optOut.description">
                 <source>This app is loaded by default (but you can opt out)</source>
-                <target>Táto aplikácia je štandardne načítaná (ale môžete ju deaktivovať)</target>
+                <target>Cette application est chargée par défaut (mais vous pouvez la désactiver)</target>
             </trans-unit>
             <trans-unit id="app.required.title">
                 <source>(always required)</source>
-                <target>(vždy potrebné)</target>
+                <target>(toujours requis)</target>
             </trans-unit>
             <trans-unit id="app.required.description">
                 <source>This application is always required</source>
-                <target>Táto aplikácia je vždy potrebná</target>
+                <target>Cette application est toujours requise</target>
             </trans-unit>
             <trans-unit id="app.purposes">
                 <source>Purposes</source>
-                <target>účely</target>
+                <target>Utilisations</target>
             </trans-unit>
             <trans-unit id="app.purpose">
                 <source>Purpose</source>
-                <target>účel</target>
+                <target>Utilisation</target>
             </trans-unit>
         </body>
     </file>

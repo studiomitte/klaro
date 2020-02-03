@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <xliff version="1.0">
-    <file source-language="en" target-language="sr" date="2019-12-18T12:35:57+01:00">
+    <file source-language="en" target-language="sr" date="2020-02-03T12:57:09+01:00">
         <body>
             <trans-unit id="consentModal.title">
                 <source>Information that we collect</source>
@@ -43,7 +43,7 @@
                 <target>Sakupljanje statistika o posećenosti</target>
             </trans-unit>
             <trans-unit id="purposes.analytics">
-                <source>Collection of visitor statistics</source>
+                <source>Analytics</source>
                 <target>Sakupljanje statistika o posećenosti</target>
             </trans-unit>
             <trans-unit id="purposes.security">
@@ -88,13 +88,11 @@
             </trans-unit>
             <trans-unit id="app.purposes">
                 <source>Purposes</source>
-                <target>Svrhe
-                </target>
+                <target>Svrhe</target>
             </trans-unit>
             <trans-unit id="app.purpose">
                 <source>Purpose</source>
-                <target>Svrha
-                </target>
+                <target>Svrha</target>
             </trans-unit>
         </body>
     </file>

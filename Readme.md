@@ -2,7 +2,7 @@
 
 This is another cookie consent solution using [klaro](https://klaro.kiprotect.com/).
 
-Translations for the following languages are included: de, el, es, hr, hu, it, nl, pl, ro, sk, sl, sr.
+Translations for the following languages are included: de, el, es, fr, hr, hu, it, nl, pl, ro, sk, sl, sr.
 
 ## Usage
 

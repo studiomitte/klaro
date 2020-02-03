@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <xliff version="1.0">
-    <file source-language="en" target-language="hr" date="2019-12-18T12:35:57+01:00">
+    <file source-language="en" target-language="hr" date="2020-02-03T12:57:09+01:00">
         <body>
             <trans-unit id="consentModal.title">
                 <source>Information that we collect</source>
@@ -43,7 +43,7 @@
                 <target>Prikupljanje statistika posjećenosti</target>
             </trans-unit>
             <trans-unit id="purposes.analytics">
-                <source>Collection of visitor statistics</source>
+                <source>Analytics</source>
                 <target>Prikupljanje statistika posjećenosti</target>
             </trans-unit>
             <trans-unit id="purposes.security">
