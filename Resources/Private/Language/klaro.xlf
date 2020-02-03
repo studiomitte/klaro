@@ -27,12 +27,6 @@
                 <source>Save</source>
             </trans-unit>
             <trans-unit id="poweredBy"></trans-unit>
-            <trans-unit id="inlineTracker.description">
-                <source>Beispiel für ein Inline-Tracking Skript</source>
-            </trans-unit>
-            <trans-unit id="externalTracker.description">
-                <source>Beispiel für ein externes Tracking Skript</source>
-            </trans-unit>
             <trans-unit id="googleTagManager.description">
                 <source>Embed additional JavaScript files</source>
             </trans-unit>
