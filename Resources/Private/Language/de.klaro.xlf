@@ -20,7 +20,7 @@
             </trans-unit>
             <trans-unit id="ok">
                 <source>OK</source>
-                <target>Los geht&#39;s!</target>
+                <target>Alle akzeptieren!</target>
             </trans-unit>
             <trans-unit id="close">
                 <source>Save</source>
@@ -72,7 +72,7 @@
             </trans-unit>
             <trans-unit id="consentNotice.learnMore">
                 <source>Learn more</source>
-                <target>mehr erfahren</target>
+                <target>konfigurieren</target>
             </trans-unit>
             <trans-unit id="app.disableAll.title">
                 <source>Toggle all apps</source>

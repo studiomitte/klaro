@@ -15,7 +15,7 @@
                 <source>To learn more, please read our {privacyPolicy}.</source>
             </trans-unit>
             <trans-unit id="ok">
-                <source>OK</source>
+                <source>Accept all</source>
             </trans-unit>
             <trans-unit id="close">
                 <source>Save</source>
@@ -61,7 +61,7 @@
                 <source>There were changes since your last visit, please update your consent.</source>
             </trans-unit>
             <trans-unit id="consentNotice.learnMore">
-                <source>Learn more</source>
+                <source>Configure</source>
             </trans-unit>
             <trans-unit id="app.disableAll.title">
                 <source>Toggle all apps</source>
