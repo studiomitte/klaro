@@ -33,6 +33,7 @@ The following options are available:
 - `Path to the configuration file`: Define the path to the JavaScript file containing the klaro configuration
 - `Path to the language file`: Use custom xlf files for localization.
 - `Show full consent modal`: If set, the consent modal is shown when the page is rendered, instead of a small modal in the bottom of the page.
+- `Path to the core Klaro JS file`: Use alternative version of klaro.
 - `Style prefix`: Use a custom CSS.
 
 ### Klaro configuration

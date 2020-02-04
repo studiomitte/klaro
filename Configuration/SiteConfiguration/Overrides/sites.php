@@ -47,8 +47,15 @@ call_user_func(
                 'type' => 'input',
             ],
         ];
+        $GLOBALS['SiteConfiguration'][$table]['columns']['klaro_core_js'] = [
+            'label' => $lll . 'site.configuration.core_js',
+            'config' => [
+                'type' => 'input',
+                'placeholder' => 'EXT:klaro/Resources/Public/Klaro/klaro-0.2.15.js'
+            ],
+        ];
         $GLOBALS['SiteConfiguration'][$table]['types']['0']['showitem'] .= '
-            ,--div--;' . $lll . 'site.configuration.tab, klaro_enable,klaro_privacy_page,klaro_configuration_file,klaro_language_file,klaro_must_consent,klaro_style_prefix
+            ,--div--;' . $lll . 'site.configuration.tab, klaro_enable,klaro_privacy_page,klaro_configuration_file,klaro_language_file,klaro_must_consent,klaro_core_js,klaro_style_prefix
          ';
     },
     'site'

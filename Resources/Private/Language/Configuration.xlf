@@ -17,6 +17,9 @@
             <trans-unit id="site.configuration.style_prefix">
                 <source>Style prefix</source>
             </trans-unit>
+            <trans-unit id="site.configuration.core_js">
+                <source>Path to the core Klaro JS file</source>
+            </trans-unit>
             <trans-unit id="site.configuration.must_consent">
                 <source>Show full consent modal box</source>
             </trans-unit>
