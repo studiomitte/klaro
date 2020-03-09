@@ -80,7 +80,7 @@
             </trans-unit>
             <trans-unit id="app.required.title">
                 <source>(always required)</source>
-                <target>(immer notwendig)</target>
+                <target>(mindig szükséges)</target>
             </trans-unit>
             <trans-unit id="app.required.description">
                 <source>This application is always required</source>
