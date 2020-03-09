@@ -24,21 +24,25 @@ class PageRendererHook
 
     public function preProcess(array $params, PageRenderer $pageRenderer)
     {
-        $site = $this->getCurrentSite();
-        if ($site && $tsfe = $this->getTypoScriptFrontendController()) {
-            $siteConfiguration = $site->getConfiguration();
-            if ($siteConfiguration['klaro_enable']) {
-                $this->pageRenderer = $pageRenderer;
-                if ($siteConfiguration['klaro_configuration_file']) {
-                    $this->createTranslations($siteConfiguration);
-                    $stylePrefix = (isset($siteConfiguration['klaro_style_prefix']) && !empty($siteConfiguration['klaro_style_prefix'])) ? self::FAKE_PREFIX : '';
-                    $configFile = $siteConfiguration['klaro_core_js'] ?? self::CORE_FILE;
+        try {
+            $site = $this->getCurrentSite();
+            if ($site && $tsfe = $this->getTypoScriptFrontendController()) {
+                $siteConfiguration = $site->getConfiguration();
+                if ($siteConfiguration['klaro_enable']) {
+                    $this->pageRenderer = $pageRenderer;
+                    if ($siteConfiguration['klaro_configuration_file']) {
+                        $this->createTranslations($siteConfiguration);
+                        $stylePrefix = (isset($siteConfiguration['klaro_style_prefix']) && !empty($siteConfiguration['klaro_style_prefix'])) ? self::FAKE_PREFIX : '';
+                        $configFile = $siteConfiguration['klaro_core_js'] ?? self::CORE_FILE;
 
-                    $pageRenderer->addJsFooterLibrary('klaro - config', $siteConfiguration['klaro_configuration_file'], 'application/javascript', false, false, '', false, '|', false, '', true);
-                    $pageRenderer->addJsFooterLibrary('klaro - klaro', $configFile, 'application/javascript', false, false, '', false, '|', false, $stylePrefix, true);
+                        $pageRenderer->addJsFooterLibrary('klaro - config', $siteConfiguration['klaro_configuration_file'], 'application/javascript', false, false, '', false, '|', false, '', true);
+                        $pageRenderer->addJsFooterLibrary('klaro - klaro', $configFile, 'application/javascript', false, false, '', false, '|', false, $stylePrefix, true);
 
+                    }
                 }
             }
+        } catch (\RuntimeException $e) {
+            // do nothing
         }
     }
 
