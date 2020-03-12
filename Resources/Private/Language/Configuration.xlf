@@ -26,6 +26,12 @@
             <trans-unit id="site.configuration.must_consent.description">
                 <source>Force user for consent</source>
             </trans-unit>
+            <trans-unit id="site.configuration.hidden_on_pages">
+                <source>Comma separated list of pages where klaro is hidden</source>
+            </trans-unit>
+            <trans-unit id="site.configuration.hidden_on_pages.description">
+                <source>Useful/Required for pages like imprint and legal information</source>
+            </trans-unit>
             <trans-unit id="site.configuration.tab">
                 <source>Klaro Cookie Settings</source>
             </trans-unit>

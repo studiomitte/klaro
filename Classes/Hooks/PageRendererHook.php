@@ -7,6 +7,7 @@ namespace StudioMitte\Klaro\Hooks;
 use Psr\Http\Message\ServerRequestInterface;
 use TYPO3\CMS\Core\Localization\LocalizationFactory;
 use TYPO3\CMS\Core\Page\PageRenderer;
+use TYPO3\CMS\Core\Routing\PageArguments;
 use TYPO3\CMS\Core\Site\Entity\Site;
 use TYPO3\CMS\Core\Site\Entity\SiteInterface;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
@@ -84,6 +85,13 @@ class PageRendererHook
                 }' . $privacyLinkConfiguration . '
              };
         ', true);
+
+        $hiddenOnPages = $siteConfiguration['klaro_hidden_on_pages'] ?? '';
+        if ($hiddenOnPages && $pageId = $this->getCurrentPageId()) {
+            if (in_array($pageId, GeneralUtility::intExplode(',', $hiddenOnPages), true)) {
+                $this->pageRenderer->addCssInlineBlock('hideKlaro', '#klaro {display:none !important;}');
+            }
+        }
     }
 
     protected function includeLanguageFileForInline($fileRef)
@@ -169,6 +177,16 @@ class PageRendererHook
             return $GLOBALS['TYPO3_REQUEST']->getAttribute('site');
         }
         return null;
+    }
+
+    protected function getCurrentPageId(): int
+    {
+        $pageId = 0;
+        $pageArguments = $GLOBALS['TYPO3_REQUEST']->getAttribute('routing');
+        if ($pageArguments instanceof PageArguments) {
+            $pageId = $pageArguments->getPageId();
+        }
+        return $pageId;
     }
 
     /**
