@@ -51,7 +51,8 @@ call_user_func(
             'label' => $lll . 'site.configuration.core_js',
             'config' => [
                 'type' => 'input',
-                'placeholder' => 'EXT:klaro/Resources/Public/Klaro/klaro-0.2.15.js'
+                'default' => 'EXT:klaro/Resources/Public/Klaro/klaro-0.6.17.js',
+                'placeholder' => 'EXT:klaro/Resources/Public/Klaro/klaro-0.6.17.js'
             ],
         ];
         $GLOBALS['SiteConfiguration'][$table]['columns']['klaro_hidden_on_pages'] = [
