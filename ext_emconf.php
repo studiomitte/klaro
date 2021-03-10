@@ -6,7 +6,7 @@ $EM_CONF[$_EXTKEY] = [
     'category' => 'frontend',
     'constraints' => [
         'depends' => [
-            'typo3' => '9.5.0-10.5.99',
+            'typo3' => '9.5.0-11.9.99',
         ],
         'conflicts' => [
         ],
@@ -18,5 +18,5 @@ $EM_CONF[$_EXTKEY] = [
     ],
     'state' => 'beta',
     'clearCacheOnLoad' => true,
-    'version' => '2.1.0',
+    'version' => '2.1.1',
 ];
