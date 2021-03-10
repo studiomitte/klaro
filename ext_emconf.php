@@ -18,5 +18,5 @@ $EM_CONF[$_EXTKEY] = [
     ],
     'state' => 'beta',
     'clearCacheOnLoad' => true,
-    'version' => '2.1.1',
+    'version' => '2.2.0',
 ];
