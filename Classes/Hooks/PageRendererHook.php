@@ -89,7 +89,13 @@ class PageRendererHook
         $hiddenOnPages = $siteConfiguration['klaro_hidden_on_pages'] ?? '';
         if ($hiddenOnPages && $pageId = $this->getCurrentPageId()) {
             if (in_array($pageId, GeneralUtility::intExplode(',', $hiddenOnPages), true)) {
-                $this->pageRenderer->addCssInlineBlock('hideKlaro', '#klaro {display:none !important;}');
+                $this->pageRenderer->addJsInlineCode('hideKlaro', "
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const klaroModal = document.querySelector('#klaro');
+                        klaroModal.setAttribute('style', 'display:none;')
+                        
+                    });
+               "); 
             }
         }
     }
