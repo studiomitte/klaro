@@ -2,7 +2,7 @@
 defined('TYPO3_MODE') || die('Access denied.');
 
 call_user_func(
-    function ($table) {
+    static function ($table) {
         $lll = 'LLL:EXT:klaro/Resources/Private/Language/Configuration.xlf:';
         $GLOBALS['SiteConfiguration'][$table]['columns']['klaro_enable'] = [
             'label' => $lll . 'site.configuration.enable',
@@ -51,8 +51,8 @@ call_user_func(
             'label' => $lll . 'site.configuration.core_js',
             'config' => [
                 'type' => 'input',
-                'default' => 'EXT:klaro/Resources/Public/Klaro/klaro-0.6.17.js',
-                'placeholder' => 'EXT:klaro/Resources/Public/Klaro/klaro-0.6.17.js'
+                'default' => 'EXT:klaro/Resources/Public/Klaro/klaro-0.7.18.js',
+                'placeholder' => 'EXT:klaro/Resources/Public/Klaro/klaro-0.7.18.js'
             ],
         ];
         $GLOBALS['SiteConfiguration'][$table]['columns']['klaro_hidden_on_pages'] = [

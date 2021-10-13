@@ -1,4 +1,5 @@
 var klaroConfig = {
+    disablePoweredBy: true,
     cookieExpiresAfterDays: 365,
     default: true,
     mustConsent: false,

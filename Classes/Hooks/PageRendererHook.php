@@ -10,8 +10,8 @@ use TYPO3\CMS\Core\Page\PageRenderer;
 use TYPO3\CMS\Core\Routing\PageArguments;
 use TYPO3\CMS\Core\Site\Entity\Site;
 use TYPO3\CMS\Core\Site\Entity\SiteInterface;
+use TYPO3\CMS\Core\Utility\ArrayUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
-use TYPO3\CMS\Core\Utility\PathUtility;
 use TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController;
 
 class PageRendererHook
@@ -93,9 +93,9 @@ class PageRendererHook
                     document.addEventListener('DOMContentLoaded', function() {
                         const klaroModal = document.querySelector('#klaro');
                         klaroModal.setAttribute('style', 'display:none;')
-                        
+
                     });
-               "); 
+               ");
             }
         }
     }
@@ -145,7 +145,6 @@ class PageRendererHook
         $languageFactory = GeneralUtility::makeInstance(LocalizationFactory::class);
 
         if ($this->pageRenderer->getLanguage() !== 'default') {
-//            $languages = array_reverse($this->languageDependencies);
             $languages = [$lang];
             // At least we need to have English
             if (empty($languages)) {
@@ -166,7 +165,7 @@ class PageRendererHook
             if ($lang !== 'default' && isset($tempLL[$language])) {
                 // Merge current language labels onto labels from previous language
                 // This way we have a labels with fall back applied
-                \TYPO3\CMS\Core\Utility\ArrayUtility::mergeRecursiveWithOverrule($localLanguage[$lang], $tempLL[$language], true, false);
+                ArrayUtility::mergeRecursiveWithOverrule($localLanguage[$lang], $tempLL[$language], true, false);
             }
         }
 
