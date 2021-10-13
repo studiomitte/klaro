@@ -1,5 +1,5 @@
 <?php
-defined('TYPO3_MODE') || die('Access denied.');
+defined('TYPO3_MODE') or die('Access denied.');
 
 call_user_func(
     static function ($table) {

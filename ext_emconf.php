@@ -16,7 +16,7 @@ $EM_CONF[$_EXTKEY] = [
             'StudioMitte\\Klaro\\' => 'Classes'
         ],
     ],
-    'state' => 'beta',
+    'state' => 'stable',
     'clearCacheOnLoad' => true,
-    'version' => '2.2.1',
+    'version' => '3.0.0',
 ];

@@ -9,7 +9,6 @@ use TYPO3\CMS\Core\Localization\LocalizationFactory;
 use TYPO3\CMS\Core\Page\PageRenderer;
 use TYPO3\CMS\Core\Routing\PageArguments;
 use TYPO3\CMS\Core\Site\Entity\Site;
-use TYPO3\CMS\Core\Site\Entity\SiteInterface;
 use TYPO3\CMS\Core\Utility\ArrayUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController;
@@ -17,17 +16,20 @@ use TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController;
 class PageRendererHook
 {
 
-    /** @var PageRenderer */
-    protected $pageRenderer;
+    protected PageRenderer $pageRenderer;
 
     private const FAKE_PREFIX = 'fake-klaro';
     private const CORE_FILE = 'EXT:klaro/Resources/Public/Klaro/klaro.js';
 
-    public function preProcess(array $params, PageRenderer $pageRenderer)
+    /**
+     * @param array<mixed> $params
+     * @param PageRenderer $pageRenderer
+     */
+    public function preProcess(array $params, PageRenderer $pageRenderer): void
     {
         try {
             $site = $this->getCurrentSite();
-            if ($site && $tsfe = $this->getTypoScriptFrontendController()) {
+            if ($site) {
                 $siteConfiguration = $site->getConfiguration();
                 if ($siteConfiguration['klaro_enable']) {
                     $this->pageRenderer = $pageRenderer;
@@ -47,10 +49,14 @@ class PageRendererHook
         }
     }
 
-    public function postProcess(array $params, PageRenderer $pageRenderer)
+    /**
+     * @param array<mixed> $params
+     * @param PageRenderer $pageRenderer
+     */
+    public function postProcess(array $params, PageRenderer $pageRenderer): void
     {
         $site = $this->getCurrentSite();
-        if ($site && $tsfe = $this->getTypoScriptFrontendController()) {
+        if ($site) {
             $siteConfiguration = $site->getConfiguration();
             if ($siteConfiguration['klaro_enable'] && $siteConfiguration['klaro_configuration_file']) {
                 $stylePrefix = $siteConfiguration['klaro_style_prefix'] ?? '';
@@ -61,18 +67,22 @@ class PageRendererHook
         }
     }
 
+    /**
+     * @param array<mixed> $siteConfiguration
+     * @throws \JsonException
+     */
     protected function createTranslations(array $siteConfiguration): void
     {
         $currentLanguage = $this->pageRenderer->getLanguage() === 'default' ? 'en' : $this->pageRenderer->getLanguage();
 
         $privacyLinkConfiguration = '';
         $privacyPageId = $siteConfiguration['klaro_privacy_page'] ?? 0;
-        if ($privacyPageId) {
-            $privacyLink = $this->getTypoScriptFrontendController()->cObj->typoLink_URL([
+        if ($privacyPageId && $tsfe = $this->getTypoScriptFrontendController()) {
+            $privacyLink = $tsfe->cObj->typoLink_URL([
                 'parameter' => $privacyPageId,
                 'forceAbsoluteUrl' => true,
             ]);
-            $privacyLinkConfiguration = LF . ',privacyPolicy: ' . GeneralUtility::quoteJSvalue($privacyLink);
+            $privacyLinkConfiguration = chr(10) . ',privacyPolicy: ' . GeneralUtility::quoteJSvalue($privacyLink);
         }
 
         $languageFile = $siteConfiguration['klaro_language_file'] ?? 'EXT:klaro/Resources/Private/Language/klaro.xlf';
@@ -100,13 +110,13 @@ class PageRendererHook
         }
     }
 
-    protected function includeLanguageFileForInline($fileRef)
+    protected function includeLanguageFileForInline(string $fileRef): string
     {
         if (!$this->pageRenderer->getLanguage() || !$this->pageRenderer->getCharSet()) {
             throw new \RuntimeException('Language and character encoding are not set . ', 1575359889);
         }
         $labelsFromFile = [];
-        $allLabels = $this->readLLfile($fileRef);
+        $allLabels = $this->readLocallangFile($fileRef);
         if ($allLabels !== false) {
             // Merge language specific translations:
             if ($this->pageRenderer->getLanguage() !== 'default' && isset($allLabels[$this->pageRenderer->getLanguage()])) {
@@ -125,10 +135,15 @@ class PageRendererHook
         foreach ($labelsFromFile as $key => $entry) {
             $this->setArray($final, $key, $entry[0]['target']);
         }
-        return json_encode($final);
+        return json_encode($final, JSON_THROW_ON_ERROR);
     }
 
-    function setArray(array &$array, $keys, $value)
+    /**
+     * @param array<mixed> $array
+     * @param string $keys
+     * @param string $value
+     */
+    protected function setArray(array &$array, string $keys, string $value): void
     {
         $keys = explode('.', $keys);
         $current = &$array;
@@ -138,7 +153,11 @@ class PageRendererHook
         $current = $value;
     }
 
-    protected function readLLfile($fileRef)
+    /**
+     * @param string $fileRef
+     * @return array<array>
+     */
+    protected function readLocallangFile(string $fileRef): array
     {
         $lang = $this->pageRenderer->getLanguage();
         /** @var LocalizationFactory $languageFactory */
@@ -172,10 +191,7 @@ class PageRendererHook
         return $localLanguage;
     }
 
-    /**
-     * Returns the currently configured site if a site is configured (= resolved) in the current request.
-     */
-    protected function getCurrentSite(): ?SiteInterface
+    protected function getCurrentSite(): ?Site
     {
         if ($GLOBALS['TYPO3_REQUEST'] instanceof ServerRequestInterface
             && $GLOBALS['TYPO3_REQUEST']->getAttribute('site') instanceof Site) {
@@ -194,9 +210,6 @@ class PageRendererHook
         return $pageId;
     }
 
-    /**
-     * @return TypoScriptFrontendController
-     */
     protected function getTypoScriptFrontendController(): ?TypoScriptFrontendController
     {
         return $GLOBALS['TSFE'];

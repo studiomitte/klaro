@@ -1,40 +1,41 @@
 {
-  "name": "studiomitte/klaro",
-  "keywords": [
-    "TYPO3",
-    "extension",
-    "consent",
-    "cookies",
-    "gdpr",
-    "dsgvo"
-  ],
-  "authors": [
-    {
-      "name": "Georg Ringer",
-      "role": "Developer",
-      "homepage": "https://studiomitte.com"
+    "name": "studiomitte/klaro",
+    "keywords": [
+        "TYPO3",
+        "extension",
+        "consent",
+        "cookies",
+        "gdpr",
+        "dsgvo"
+    ],
+    "authors": [
+        {
+            "name": "Georg Ringer",
+            "role": "Developer",
+            "homepage": "https://studiomitte.com"
+        }
+    ],
+    "type": "typo3-cms-extension",
+    "description": "Cookie consent solution following the GDPR by using the solution Klaro",
+    "homepage": "https://studiomitte.com",
+    "license": [
+        "GPL-2.0-or-later"
+    ],
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "typo3/cms-core": "^9 || ^10 || ^11"
+    },
+    "autoload": {
+        "psr-4": {
+            "StudioMitte\\Klaro\\": "Classes"
+        }
+    },
+    "replace": {
+        "typo3-ter/klaro": "self.version"
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "klaro"
+        }
     }
-  ],
-  "type": "typo3-cms-extension",
-  "description": "Cookie consent solution following the GDPR by using the solution Klaro",
-  "homepage": "https://studiomitte.com",
-  "license": [
-    "GPL-2.0-or-later"
-  ],
-  "require": {
-    "typo3/cms-core": "^9 || ^10 || ^11"
-  },
-  "autoload": {
-    "psr-4": {
-      "StudioMitte\\Klaro\\": "Classes"
-    }
-  },
-  "replace": {
-    "typo3-ter/klaro": "self.version"
-  },
-  "extra": {
-    "typo3/cms": {
-      "extension-key": "klaro"
-    }
-  }
 }

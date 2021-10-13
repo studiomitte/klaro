@@ -6,14 +6,16 @@ namespace StudioMitte\Klaro\Hooks;
 
 class ContentPostProcAll
 {
-    /** @var array */
-    protected $simpleSearchReplacements = [
+    /**
+     * @var string[]
+     */
+    protected array $simpleSearchReplacements = [
         'href="https://KLARO_CONSENT.com"' => 'href="#" onClick="return klaro.show(klaroConfig)"',
         'href="https://KLARO_RESET.com"' => 'href="#" onClick="klaro.getManager().resetConsent();location.reload()"',
     ];
 
     /**
-     * @param array $parameters
+     * @param array<mixed> $parameters
      */
     public function run(array &$parameters): void
     {
