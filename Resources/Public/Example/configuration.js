@@ -4,7 +4,7 @@ var klaroConfig = {
     default: true,
     mustConsent: false,
 
-    apps: [
+    services: [
         {
             name: 'googleAnalytics',
             title: 'Google Analytics',
@@ -12,7 +12,8 @@ var klaroConfig = {
             cookies: [/^ga/i],
             callback: function (consent, app) {
                 if (consent !== false) {
-                    dataLayer.push({'event': 'loadgtm-analytics'})
+                  window.dataLayer = window.dataLayer || [];
+                  window.dataLayer.push({'event': 'loadgtm-analytics'})
                 }
             },
         },
