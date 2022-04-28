@@ -110,8 +110,10 @@ The urls will be replaced dynamically by a JavaScript link which will then trigg
 If the configuration `Style prefix` is set, it is used as a prefix and you can apply your own CSS rules.
 The SCSS files in `EXT:klaro/Resources/Private/Scss/` should be copied to your frontend pipeline and modified to your needs.
 
-## Author
 
-This extension has been created by [StudioMitte](https://studiomitte.com)
+## Credits
 
-![StudioMitte](Resources/Public/Documentation/studiomitte_logo.png)
+This extension was created by Georg Ringer for [Studio Mitte, Linz](https://studiomitte.com) with ♥.
+
+[Find more TYPO3 extensions we have developed](https://www.studiomitte.com/loesungen/typo3) that provide additional features for TYPO3 sites. 
+
