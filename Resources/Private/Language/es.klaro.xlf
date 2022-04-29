@@ -46,35 +46,35 @@
                 <source>Learn more</source>
                 <target>Más información</target>
             </trans-unit>
-            <trans-unit id="app.disableAll.title">
+            <trans-unit id="service.disableAll.title">
                 <source>Toggle all apps</source>
                 <target>Habilitar/deshabilitar todas las aplicaciones</target>
             </trans-unit>
-            <trans-unit id="app.disableAll.description">
+            <trans-unit id="service.disableAll.description">
                 <source>Use this switch to enable/disable all apps.</source>
                 <target>Use este botón para habilitar o deshabilitar todas las aplicaciones.</target>
             </trans-unit>
-            <trans-unit id="app.optOut.title">
+            <trans-unit id="service.optOut.title">
                 <source>(opt-out)</source>
                 <target>(opt-out)</target>
             </trans-unit>
-            <trans-unit id="app.optOut.description">
+            <trans-unit id="service.optOut.description">
                 <source>This app is loaded by default (but you can opt out)</source>
                 <target>Esta aplicación se carga de forma predeterminada (pero puede desactivarla)</target>
             </trans-unit>
-            <trans-unit id="app.required.title">
+            <trans-unit id="service.required.title">
                 <source>(always required)</source>
                 <target>(necesaria)</target>
             </trans-unit>
-            <trans-unit id="app.required.description">
+            <trans-unit id="service.required.description">
                 <source>This application is always required</source>
                 <target>Esta aplicación se necesita siempre</target>
             </trans-unit>
-            <trans-unit id="app.purposes">
+            <trans-unit id="service.purposes">
                 <source>Purposes</source>
                 <target>Fines</target>
             </trans-unit>
-            <trans-unit id="app.purpose">
+            <trans-unit id="service.purpose">
                 <source>Purpose</source>
                 <target>Fin</target>
             </trans-unit>
