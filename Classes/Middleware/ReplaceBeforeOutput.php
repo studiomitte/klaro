@@ -27,6 +27,10 @@ class ReplaceBeforeOutput implements MiddlewareInterface
      */
     public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
     {
+        if (!($GLOBALS['TSFE'] ?? false)) {
+            return $handler->handle($request);
+        }
+
         // let it generate a response
         $response = $handler->handle($request);
         if ($response instanceof NullResponse) {
