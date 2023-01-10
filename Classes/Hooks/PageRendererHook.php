@@ -27,6 +27,10 @@ class PageRendererHook
      */
     public function preProcess(array $params, PageRenderer $pageRenderer): void
     {
+        $tsfe = $this->getTypoScriptFrontendController();
+        if (!$tsfe) {
+            return;
+        }
         try {
             $site = $this->getCurrentSite();
             if ($site) {
@@ -55,6 +59,10 @@ class PageRendererHook
      */
     public function postProcess(array $params, PageRenderer $pageRenderer): void
     {
+        $tsfe = $this->getTypoScriptFrontendController();
+        if (!$tsfe) {
+            return;
+        }
         $site = $this->getCurrentSite();
         if ($site) {
             $siteConfiguration = $site->getConfiguration();
@@ -212,7 +220,7 @@ class PageRendererHook
 
     protected function getTypoScriptFrontendController(): ?TypoScriptFrontendController
     {
-        return $GLOBALS['TSFE'];
+        return $GLOBALS['TSFE'] ?? null;
     }
 
 }
