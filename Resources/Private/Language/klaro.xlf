@@ -63,28 +63,28 @@
             <trans-unit id="consentNotice.learnMore">
                 <source>Configure</source>
             </trans-unit>
-            <trans-unit id="app.disableAll.title">
+            <trans-unit id="service.disableAll.title">
                 <source>Toggle all apps</source>
             </trans-unit>
-            <trans-unit id="app.disableAll.description">
+            <trans-unit id="service.disableAll.description">
                 <source>Use this switch to enable/disable all apps.</source>
             </trans-unit>
-            <trans-unit id="app.optOut.title">
+            <trans-unit id="service.optOut.title">
                 <source>(opt-out)</source>
             </trans-unit>
-            <trans-unit id="app.optOut.description">
+            <trans-unit id="service.optOut.description">
                 <source>This app is loaded by default (but you can opt out)</source>
             </trans-unit>
-            <trans-unit id="app.required.title">
+            <trans-unit id="service.required.title">
                 <source>(always required)</source>
             </trans-unit>
-            <trans-unit id="app.required.description">
+            <trans-unit id="service.required.description">
                 <source>This application is always required</source>
             </trans-unit>
-            <trans-unit id="app.purposes">
+            <trans-unit id="service.purposes">
                 <source>Purposes</source>
             </trans-unit>
-            <trans-unit id="app.purpose">
+            <trans-unit id="service.purpose">
                 <source>Purpose</source>
             </trans-unit>
             <trans-unit id="klaro.description">

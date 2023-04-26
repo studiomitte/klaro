@@ -62,35 +62,35 @@
                 <source>Learn more</source>
                 <target>Dozvědět se víc</target>
             </trans-unit>
-            <trans-unit id="app.disableAll.title">
+            <trans-unit id="service.disableAll.title">
                 <source>Toggle all apps</source>
                 <target>Zapnout/vypnout všechny aplikace</target>
             </trans-unit>
-            <trans-unit id="app.disableAll.description">
+            <trans-unit id="service.disableAll.description">
                 <source>Use this switch to enable/disable all apps.</source>
                 <target>Pro zapnutí/vypnutí všech aplikací použijte tento přepínač.</target>
             </trans-unit>
-            <trans-unit id="app.optOut.title">
+            <trans-unit id="service.optOut.title">
                 <source>(opt-out)</source>
                 <target>(Opt-Out)</target>
             </trans-unit>
-            <trans-unit id="app.optOut.description">
+            <trans-unit id="service.optOut.description">
                 <source>This app is loaded by default (but you can opt out)</source>
                 <target>Tato aplikace je ve výchozím nastavení zapnuta (můžete ji však vypnout)</target>
             </trans-unit>
-            <trans-unit id="app.required.title">
+            <trans-unit id="service.required.title">
                 <source>(always required)</source>
                 <target>(vždy vyžadováno)</target>
             </trans-unit>
-            <trans-unit id="app.required.description">
+            <trans-unit id="service.required.description">
                 <source>This application is always required</source>
                 <target>Tato aplikace je vždy vyžadována</target>
             </trans-unit>
-            <trans-unit id="app.purposes">
+            <trans-unit id="service.purposes">
                 <source>Purposes</source>
                 <target>Účely</target>
             </trans-unit>
-            <trans-unit id="app.purpose">
+            <trans-unit id="service.purpose">
                 <source>Purpose</source>
                 <target>Účel</target>
             </trans-unit>
