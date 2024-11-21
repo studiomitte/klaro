@@ -120,7 +120,7 @@ class PageRendererHook
 
     protected function includeLanguageFileForInline(string $fileRef): string
     {
-        if (!$this->pageRenderer->getLanguage() || !$this->pageRenderer->getCharSet()) {
+        if (!$this->pageRenderer->getLanguage()) {
             throw new \RuntimeException('Language and character encoding are not set . ', 1575359889);
         }
         $labelsFromFile = [];
