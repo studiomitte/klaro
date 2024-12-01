@@ -77,7 +77,7 @@ if (typeof klaroConfigTranslations !== 'undefined') {
 This example will load show 2 apps, **Google Tag Manager** which is always loaded and **Google Analytics**.
 The latter will be loaded by GTM and the callback must be used to actually load it only if the consent is given by the user.
 
-See https://klaro.kiprotect.com/#getting-started for all configuration options
+See https://heyklaro.com/docs/getting-started for all configuration options
 
 ### Inline code
 
