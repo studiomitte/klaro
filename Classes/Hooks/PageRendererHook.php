@@ -85,7 +85,8 @@ class PageRendererHook
 
         $privacyLinkConfiguration = '';
         $privacyPageId = $siteConfiguration['klaro_privacy_page'] ?? 0;
-        if ($privacyPageId && $tsfe = $this->getTypoScriptFrontendController()) {
+        $tsfe = $this->getTypoScriptFrontendController();
+        if ($privacyPageId && $tsfe && $tsfe->cObj) {
             $privacyLink = $tsfe->cObj->typoLink_URL([
                 'parameter' => $privacyPageId,
                 'forceAbsoluteUrl' => true,
