@@ -46,35 +46,35 @@
                 <source>Learn more</source>
                 <target>Περισσότερα</target>
             </trans-unit>
-            <trans-unit id="app.disableAll.title">
+            <trans-unit id="service.disableAll.title">
                 <source>Toggle all apps</source>
                 <target>Για όλες τις εφαρμογές</target>
             </trans-unit>
-            <trans-unit id="app.disableAll.description">
+            <trans-unit id="service.disableAll.description">
                 <source>Use this switch to enable/disable all apps.</source>
                 <target>Χρησιμοποίησε αυτό τον διακόπτη για να ενεργοποιήσεις/απενεργοποιήσεις όλες τις εφαρμογές</target>
             </trans-unit>
-            <trans-unit id="app.optOut.title">
+            <trans-unit id="service.optOut.title">
                 <source>(opt-out)</source>
                 <target>(μη απαιτούμενο)</target>
             </trans-unit>
-            <trans-unit id="app.optOut.description">
+            <trans-unit id="service.optOut.description">
                 <source>This app is loaded by default (but you can opt out)</source>
                 <target>Είναι προκαθορισμένο να φορτώνεται, άλλα μπορεί να παραληφθεί</target>
             </trans-unit>
-            <trans-unit id="app.required.title">
+            <trans-unit id="service.required.title">
                 <source>(always required)</source>
                 <target>(απαιτούμενο)</target>
             </trans-unit>
-            <trans-unit id="app.required.description">
+            <trans-unit id="service.required.description">
                 <source>This application is always required</source>
                 <target>Δεν γίνεται να λειτουργήσει σωστά η εφαρμογή χωρίς αυτό</target>
             </trans-unit>
-            <trans-unit id="app.purposes">
+            <trans-unit id="service.purposes">
                 <source>Purposes</source>
                 <target>Σκοποί</target>
             </trans-unit>
-            <trans-unit id="app.purpose">
+            <trans-unit id="service.purpose">
                 <source>Purpose</source>
                 <target>Σκοπός</target>
             </trans-unit>

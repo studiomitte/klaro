@@ -62,35 +62,35 @@
                 <source>Learn more</source>
                 <target>Dowiedz się więcej</target>
             </trans-unit>
-            <trans-unit id="app.disableAll.title">
+            <trans-unit id="service.disableAll.title">
                 <source>Toggle all apps</source>
                 <target>Włączenie/Wyłączenie aplikacji:</target>
             </trans-unit>
-            <trans-unit id="app.disableAll.description">
+            <trans-unit id="service.disableAll.description">
                 <source>Use this switch to enable/disable all apps.</source>
                 <target>Prosimy o użycie przycisku do aktywacji lub deaktywacji aplikacji</target>
             </trans-unit>
-            <trans-unit id="app.optOut.title">
+            <trans-unit id="service.optOut.title">
                 <source>(opt-out)</source>
                 <target>(opt-Out)</target>
             </trans-unit>
-            <trans-unit id="app.optOut.description">
+            <trans-unit id="service.optOut.description">
                 <source>This app is loaded by default (but you can opt out)</source>
                 <target>Domyślnym ustawieniem jest aktywacja tej aplikacji, ale mogą ją Państwo deaktywować.</target>
             </trans-unit>
-            <trans-unit id="app.required.title">
+            <trans-unit id="service.required.title">
                 <source>(always required)</source>
                 <target>(aplikacja konieczna do zainstalowania)</target>
             </trans-unit>
-            <trans-unit id="app.required.description">
+            <trans-unit id="service.required.description">
                 <source>This application is always required</source>
                 <target>aplikacja konieczna do zainstalowania</target>
             </trans-unit>
-            <trans-unit id="app.purposes">
+            <trans-unit id="service.purposes">
                 <source>Purposes</source>
                 <target>cele</target>
             </trans-unit>
-            <trans-unit id="app.purpose">
+            <trans-unit id="service.purpose">
                 <source>Purpose</source>
                 <target>cel</target>
             </trans-unit>
