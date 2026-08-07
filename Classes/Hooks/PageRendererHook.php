@@ -5,13 +5,14 @@ declare(strict_types=1);
 namespace StudioMitte\Klaro\Hooks;
 
 use Psr\Http\Message\ServerRequestInterface;
+use TYPO3\CMS\Core\Information\Typo3Version;
 use TYPO3\CMS\Core\Localization\LocalizationFactory;
 use TYPO3\CMS\Core\Page\PageRenderer;
 use TYPO3\CMS\Core\Routing\PageArguments;
 use TYPO3\CMS\Core\Site\Entity\Site;
 use TYPO3\CMS\Core\Utility\ArrayUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
-use TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController;
+use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;
 
 class PageRendererHook
 {
@@ -27,8 +28,7 @@ class PageRendererHook
      */
     public function preProcess(array $params, PageRenderer $pageRenderer): void
     {
-        $tsfe = $this->getTypoScriptFrontendController();
-        if (!$tsfe) {
+        if (!$this->getCurrentRequest()?->getAttribute('frontend.page.information')) {
             return;
         }
         try {
@@ -59,8 +59,7 @@ class PageRendererHook
      */
     public function postProcess(array $params, PageRenderer $pageRenderer): void
     {
-        $tsfe = $this->getTypoScriptFrontendController();
-        if (!$tsfe) {
+        if (!$this->getCurrentRequest()?->getAttribute('frontend.page.information')) {
             return;
         }
         $site = $this->getCurrentSite();
@@ -85,9 +84,11 @@ class PageRendererHook
 
         $privacyLinkConfiguration = '';
         $privacyPageId = $siteConfiguration['klaro_privacy_page'] ?? 0;
-        $tsfe = $this->getTypoScriptFrontendController();
-        if ($privacyPageId && $tsfe && $tsfe->cObj) {
-            $privacyLink = $tsfe->cObj->typoLink_URL([
+        $request = $this->getCurrentRequest();
+        if ($privacyPageId && $request) {
+            $cObj = GeneralUtility::makeInstance(ContentObjectRenderer::class);
+            $cObj->setRequest($request);
+            $privacyLink = $cObj->typoLink_URL([
                 'parameter' => $privacyPageId,
                 'forceAbsoluteUrl' => true,
             ]);
@@ -124,25 +125,10 @@ class PageRendererHook
         if (!$this->pageRenderer->getLanguage()) {
             throw new \RuntimeException('Language and character encoding are not set . ', 1575359889);
         }
-        $labelsFromFile = [];
-        $allLabels = $this->readLocallangFile($fileRef);
-        if ($allLabels !== false) {
-            // Merge language specific translations:
-            if ($this->pageRenderer->getLanguage() !== 'default' && isset($allLabels[$this->pageRenderer->getLanguage()])) {
-                $labels = array_merge($allLabels['default'], $allLabels[$this->pageRenderer->getLanguage()]);
-            } else {
-                $labels = $allLabels['default'];
-            }
-            // Iterate through all locallang labels:
-            foreach ($labels as $label => $value) {
-                // If $selectionPrefix is set, only respect labels that start with $selectionPrefix
-                $labelsFromFile[$label] = $value;
-            }
-        }
 
         $final = [];
-        foreach ($labelsFromFile as $key => $entry) {
-            $this->setArray($final, $key, $entry[0]['target']);
+        foreach ($this->readLocallangFile($fileRef) as $key => $value) {
+            $this->setArray($final, $key, (string)$value);
         }
         return json_encode($final, JSON_THROW_ON_ERROR);
     }
@@ -164,64 +150,55 @@ class PageRendererHook
 
     /**
      * @param string $fileRef
-     * @return array<array>
+     * @return array<string, mixed> Flat key => label map, fallback to English/default already applied.
      */
     protected function readLocallangFile(string $fileRef): array
     {
         $lang = $this->pageRenderer->getLanguage();
-        /** @var LocalizationFactory $languageFactory */
         $languageFactory = GeneralUtility::makeInstance(LocalizationFactory::class);
+        $data = $languageFactory->getParsedData($fileRef, $lang);
 
-        if ($this->pageRenderer->getLanguage() !== 'default') {
-            $languages = [$lang];
-            // At least we need to have English
-            if (empty($languages)) {
-                $languages[] = 'default';
-            }
-        } else {
-            $languages = ['default'];
+        if ((new Typo3Version())->getMajorVersion() >= 14) {
+            // TYPO3 v14+: LocalizationFactory is Symfony Translator based and returns
+            // a flat key => label map for the requested language, fallback already applied.
+            return $data;
         }
 
-        $localLanguage = [];
-        foreach ($languages as $language) {
-            $tempLL = $languageFactory->getParsedData($fileRef, $language);
-
-            $localLanguage['default'] = $tempLL['default'];
-            if (!isset($localLanguage[$lang])) {
-                $localLanguage[$lang] = $localLanguage['default'];
-            }
-            if ($lang !== 'default' && isset($tempLL[$language])) {
-                // Merge current language labels onto labels from previous language
-                // This way we have a labels with fall back applied
-                ArrayUtility::mergeRecursiveWithOverrule($localLanguage[$lang], $tempLL[$language], true, false);
-            }
+        // TYPO3 v13 and earlier: legacy LOCAL_LANG format, nested by language key,
+        // each label wrapped as [0]['target'].
+        $labels = $data['default'] ?? [];
+        if ($lang !== 'default' && isset($data[$lang])) {
+            // Merge current language labels onto labels from previous language
+            // This way we have a labels with fall back applied
+            ArrayUtility::mergeRecursiveWithOverrule($labels, $data[$lang], true, false);
         }
 
-        return $localLanguage;
+        $flat = [];
+        foreach ($labels as $key => $entry) {
+            $flat[$key] = $entry[0]['target'];
+        }
+        return $flat;
     }
 
     protected function getCurrentSite(): ?Site
     {
-        if ($GLOBALS['TYPO3_REQUEST'] instanceof ServerRequestInterface
-            && $GLOBALS['TYPO3_REQUEST']->getAttribute('site') instanceof Site) {
-            return $GLOBALS['TYPO3_REQUEST']->getAttribute('site');
-        }
-        return null;
+        $site = $this->getCurrentRequest()?->getAttribute('site');
+        return $site instanceof Site ? $site : null;
     }
 
     protected function getCurrentPageId(): int
     {
         $pageId = 0;
-        $pageArguments = $GLOBALS['TYPO3_REQUEST']->getAttribute('routing');
+        $pageArguments = $this->getCurrentRequest()?->getAttribute('routing');
         if ($pageArguments instanceof PageArguments) {
             $pageId = $pageArguments->getPageId();
         }
         return $pageId;
     }
 
-    protected function getTypoScriptFrontendController(): ?TypoScriptFrontendController
+    protected function getCurrentRequest(): ?ServerRequestInterface
     {
-        return $GLOBALS['TSFE'] ?? null;
+        return $GLOBALS['TYPO3_REQUEST'] instanceof ServerRequestInterface ? $GLOBALS['TYPO3_REQUEST'] : null;
     }
 
 }

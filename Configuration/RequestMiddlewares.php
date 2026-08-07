@@ -7,11 +7,10 @@ return [
         'typo3/klaro/replace-content' => [
             'target' => \StudioMitte\Klaro\Middleware\ReplaceBeforeOutput::class,
             'before' => [
-                'typo3/cms-frontend/output-compression',
                 'typo3/cms-frontend/content-length-headers',
             ],
             'after' => [
-                'typo3/cms-frontend/tsfe',
+                'typo3/cms-frontend/prepare-tsfe-rendering',
             ],
         ],
     ],
