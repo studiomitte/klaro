@@ -104,7 +104,7 @@ class PageRendererHook
                     ' . $currentLanguage . ': ' . $this->includeLanguageFileForInline($languageFile) . '
                 }' . $privacyLinkConfiguration . '
              };
-        ', true);
+        ', true, false, true);
 
         $hiddenOnPages = $siteConfiguration['klaro_hidden_on_pages'] ?? '';
         if ($hiddenOnPages && $pageId = $this->getCurrentPageId()) {
@@ -115,7 +115,7 @@ class PageRendererHook
                         klaroModal.setAttribute('style', 'display:none;')
 
                     });
-               ");
+               ", true, false, true);
             }
         }
     }
